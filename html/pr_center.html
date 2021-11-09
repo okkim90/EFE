@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi"  name="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/font.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/pr.css" media="all" />
+    <!-- js -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+    <div id="skip_nav">
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb">메뉴 바로가기</a>
+    </div>
+    <div id="wrap" class="sub">
+        <div id="header">
+            <div class="top_banner">
+                <div class="btn_box">
+                    <a href="" class="btn_close_today">오늘 하루 열지 않기</a>
+                    <a href="" class="btn_close" onclick="close_top_banner(this); return false;"><span class="blind">닫기</span> </a>
+                </div>
+                <a href="">
+                    <img src="../img/common/top_banner.png" alt="" class="pc_only">
+                    <img src="../img/common/top_banner_m.png" alt="" class="m_only">
+                </a>
+            </div>
+            <div class="header_inner">
+                <h1>
+                    <a href="../html/index.html">
+                        <span class="blind">경제금융교육존</span>
+                        <img src="../img/common/logo.svg" alt="">
+                    </a>
+                </h1>
+                <div class="btnSet">
+                    <!-- 실시간 off -->
+                    <a href="" onclick="show_popup(this); return false" class="btn_onAir on">ON-AIR</a>
+                    <!-- // 실시간 off -->
+                    <!-- 실시간 on -->
+                    <!-- <a href="" onclick="show_popup(this); return false" class="btn_onAir">ON-AIR</a> -->
+                    <!--// 실시간 on -->
+                    <div class="welcome">
+                        <a href="">
+                            <img src="../img/common/icon_user_m.png" alt="" class="my_icon">
+                            <span class="my_name">홍길동</span>    
+                        </a>
+                        님 반갑습니다.
+                    </div>
+                    <div class="my_like">
+                        <img src="../img/common/icon_like.svg" alt="">
+                        <span><em>내 하트</em> 24개</span>
+                    </div>
+                    <!-- <a href="" class="btn_login">로그인</a> -->
+                    <a href="" class="btn_logout">로그아웃</a>
+                </div>
+                <a href="" class="btn_menu">
+                    <span class="barTop"></span>
+                    <span class="barMid"></span>
+                    <span class="barBot"></span>
+                </a>
+                <div class="gnbWrap">
+                    <ul id="gnb" class="clearfix">
+                        <li>
+                            <a href="../html/pr_center.html">경제·금융교육존</a>
+                            <ul class="depth2">
+                                <li class="order0"><a href="../html/pr_center3.html">경제교육단체협의회</a></li>
+                                <li class="order6"><a href="../html/pr_center2.html">지역경제교육센터협의회</a></li>
+                                <br class="rp_br">
+                                <li class="order1">
+                                    <a href="">경제단체</a>
+                                    <ul class="depth3">
+                                        <li><a href="">대한상공회의소</a></li>
+                                        <li><a href="">중소기업중앙회</a></li>
+                                        <li><a href="">한국경영자총협회</a></li>
+                                        <li><a href="">한국무역협회</a></li>                              
+                                    </ul>
+                                </li>
+                                <li class="order2">
+                                    <a href="">공공기관</a>
+                                    <ul class="depth3">
+                                        <li><a href="">노사발전재단</a></li>
+                                        <li><a href="">서민금융진흥원</a></li>
+                                        <li><a href="">예금보험공사</a></li>
+                                        <li><a href="../html/pr_center.html">한국개발연구원</a></li>
+                                        <li><a href="">한국노동연구원</a></li>
+                                        <li><a href="">한국사회적기업진흥원</a></li>
+                                        <li><a href="">한국소비자원</a></li>
+                                        <li><a href="">한국조폐공사</a></li>
+                                    </ul>
+                                </li>
+                                <li class="order3">
+                                    <a href="">금융기관 및 단체</a>
+                                    <ul class="depth3">
+                                        <li><a href="">IBK기업은행</a></li>
+                                        <li><a href="">KDB산업은행</a></li>
+                                        <li><a href="">NH농협금융지주</a></li>
+                                        <li><a href="">신용회복위원회</a></li>
+                                        <li><a href="">신한은행</a></li>
+                                        <li><a href="">우리은행</a></li>
+                                        <li><a href="">청소년금융교육협의회</a></li>
+                                        <li><a href="">하나금융지주</a></li>
+                                        <li><a href="">한국수출입은행</a></li>
+                                        <li><a href="">KB금융공익재단</a></li>
+                                    </ul>
+                                </li>
+                                <li class="order4">
+                                    <a href="">기업 및 언론</a>
+                                    <ul class="depth3">
+                                        <li><a href="">매일경제신문 경제경영연구소</a></li>
+                                        <li><a href="">파이낸셜뉴스 FN이노에듀</a></li>
+                                        <li><a href="">한겨레 시민경제센터</a></li>
+                                        <li><a href="">한국경제신문 경제교육연구소</a></li>
+                                        <li><a href="">한국교육방송</a></li>
+                                        <li><a href="">포스코 인재창조원</a></li>                                       
+                                    </ul>
+                                </li>
+                                <li class="order5">
+                                    <a href="">시민단체</a>
+                                    <ul class="depth3">
+                                        <li><a href="">경제정의실천시민연합</a></li>
+                                        <li><a href="">금융과행복네트워크</a></li>
+                                        <li><a href="">서울YMCA</a></li>
+                                        <li><a href="">소비자공익네트워크</a></li>
+                                        <li><a href="">한국YWCA연합회</a></li>
+                                        <li><a href="">한국노동조합총연맹</a></li>
+                                        <li><a href="">한국스카우트연맹</a></li>
+                                        <li><a href="">JA코리아</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">마이페이지</a></li>
+                    </ul>
+                </div>
+                <div class="allMenuWrap">
+                    <a href="" class="close_allMenu"><img src="../img/common/close_allMenu.svg" alt="전체메뉴 닫기"></a>
+                    <ul class="allMenuBot_m">
+                        <li><a href="">로그아웃</a></li>
+                        <li><a href="">개인정보 처리방침</a></li>
+                        <li><a href="">관리자</a></li>
+                    </ul>
+                    <div class="allMenuInner">
+                        
+                        <ul class="allMenu">
+                            <li class="has_depth2">
+                                <a href="../html/pr_center.html">경제·금융교육존</a>
+                                <span class="am_toggle">경제·금융교육존<span class="icon_plus"></span></span>
+                                <ul class="depth2">
+                                    <li><a href="../html/pr_center3.html">경제교육단체협의회</a></li>
+                                    <li><a href="../html/pr_center2.html">지역경제교육센터협의회</a></li>
+                                    <br class="pc_only">
+                                    <li class="has_depth3">
+                                        <a href="">경제단체</a>
+                                        <span class="am_toggle">경제단체</span>
+                                        <ul class="depth3">
+                                            <li><a href="">대한상공회의소</a></li>
+                                            <li><a href="">중소기업중앙회</a></li>
+                                            <li><a href="">한국경영자총협회</a></li>
+                                            <li><a href="">한국무역협회</a></li>                              
+                                        </ul>
+                                    </li>
+                                    <li class="has_depth3">
+                                        <a href="">공공기관</a>
+                                        <span class="am_toggle">공공기관</span>
+                                        <ul class="depth3">
+                                            <li><a href="">노사발전재단</a></li>
+                                            <li><a href="">서민금융진흥원</a></li>
+                                            <li><a href="">예금보험공사</a></li>
+                                            <li><a href="../html/pr_center.html">한국개발연구원</a></li>
+                                            <li><a href="">한국노동연구원</a></li>
+                                            <li><a href="">한국사회적기업진흥원</a></li>
+                                            <li><a href="">한국소비자원</a></li>
+                                            <li><a href="">한국조폐공사</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has_depth3">
+                                        <a href="">금융기관 및 단체</a>
+                                        <span class="am_toggle">금융기관 및 단체</span>
+                                        <ul class="depth3">
+                                            <li><a href="">IBK기업은행</a></li>
+                                            <li><a href="">KDB산업은행</a></li>
+                                            <li><a href="">NH농협금융지주</a></li>
+                                            <li><a href="">신용회복위원회</a></li>
+                                            <li><a href="">신한은행</a></li>
+                                            <li><a href="">우리은행</a></li>
+                                            <li><a href="">청소년금융교육협의회</a></li>
+                                            <li><a href="">하나금융지주</a></li>
+                                            <li><a href="">한국수출입은행</a></li>
+                                            <li><a href="">KB금융공익재단</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has_depth3">
+                                        <a href="">기업 및 언론</a>
+                                        <span class="am_toggle">기업 및 언론</span>
+                                        <ul class="depth3">
+                                            <li><a href="">매일경제신문 경제경영연구소</a></li>
+                                            <li><a href="">파이낸셜뉴스 FN이노에듀</a></li>
+                                            <li><a href="">한겨레 시민경제센터</a></li>
+                                            <li><a href="">한국경제신문 경제교육연구소</a></li>
+                                            <li><a href="">한국교육방송</a></li>
+                                            <li><a href="">포스코 인재창조원</a></li>                                       
+                                        </ul>
+                                    </li>
+                                    <li class="has_depth3">
+                                        <a href="">시민단체</a>
+                                        <span class="am_toggle">시민단체</span>
+                                        <ul class="depth3">
+                                            <li><a href="">경제정의실천시민연합</a></li>
+                                            <li><a href="">금융과행복네트워크</a></li>
+                                            <li><a href="">서울YMCA</a></li>
+                                            <li><a href="">소비자공익네트워크</a></li>
+                                            <li><a href="">한국YWCA연합회</a></li>
+                                            <li><a href="">한국노동조합총연맹</a></li>
+                                            <li><a href="">한국스카우트연맹</a></li>
+                                            <li><a href="">JA코리아</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">이벤트</a></li>
+                            <li><a href="">마이페이지</a></li>
+                        </ul>
+                        <ul class="allMenuBot">
+                            <li><a href="">개인정보 처리방침</a></li>
+                            <li><a href="">관리자</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <!-- lnb -->
+            <div class="lnb">
+                <ul>
+                    <li class="home"><a href="../imdex.html"><img src="../img/pr/icon_home.svg" alt="main" /></a></li>
+                    <li>
+                        <a href="#none">공공기관</a>
+                        <ul class="lnb_list">
+                            <li><a href="#none">경제교육단체협의회</a></li>
+                            <li><a href="#none">지역경제교육센터협의회</a></li>
+                            <li><a href="#none">경제단체</a></li>
+                            <li class="on"><a href="#none">공공기관</a></li>
+                            <li><a href="#none">금융기관 및 단체</a></li>
+                            <li><a href="#none">기업 및 언론</a></li>
+                            <li><a href="#none">시민단체</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">한국개발연구원</a>
+                        <ul class="lnb_list">
+                            <li><a href="#none">노사발전재단</a></li>
+                            <li><a href="#none">서민금융진흥원</a></li>
+                            <li><a href="#none">예금보험공사</a></li>
+                            <li class="on"><a href="#none">한국개발연구원</a></li>
+                            <li><a href="#none">한국노동연구원</a></li>
+                            <li><a href="#none">한국사회적기업진흥원</a></li>
+                            <li><a href="#none">한국소비자원</a></li>
+                            <li><a href="#none">한국조폐공사</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- //lnb -->
+            <div class="content">
+                <!-- 각 PR 별 상단 이미지는 배경이미지로 넣어주세요 -->
+                <div class="pr_baner" style="background-image: url(../img/pr/pr_banner.jpg);">
+                    <span class="pr_logo">
+                        <img src="../img/pr/pr_logo.png" alt="">
+                    </span>
+                </div>
+                <div class="inner">
+                    <div class="pr_top taC">
+                        <h2>한국개발연구원</h2>
+                        <a href="www.kdi.re.kr" class="pr_link" target="_blank">www.kdi.re.kr</a>
+                        <p class="pr_info">30149 세종특별자치시 남세종로 263 · 044-550-4114</p>
+                        <div class="pr_btns">
+                            <a href="" type="button" class="pr_btn btn_stamp"><span><i><img src="../img/pr/icon_stamp.svg" alt=""></i>스탬프 받기</span></a>
+                            <a href="https://www.youtube.com/embed/rvPoahQfj_g?autoplay=1" class="pr_btn btn_video btn_vid_promotion"><span><i><img src="../img/pr/icon_video.svg" alt=""></i>홍보영상</span></a>
+                            <!-- 활성화 상태 : on class 붙여주세요 -->
+                            <!--
+                            <a href="" type="button" class="pr_btn btn_stamp on"><span><i><img src="../img/pr/icon_stamp.svg" alt=""></i>스탬프 획득</span></a>
+                            <a href="" type="button" class="pr_btn btn_video on"><span><i><img src="../img/pr/icon_video.svg" alt=""></i>홍보영상</span></a>
+                            -->
+                        </div>
+                    </div>
+    
+                    <div class="pr_sec pr_intro">
+                        <h3 class="pr_tit">소개</h3>
+                        <p class="pr_intro_txt">국제개발협력센터는 개발협력 정책연구, 지역⋅ 분야별 심층연구를 통해 한국 개발협력의 방향성을 제시하고, 정책의 효과성을 제고하기 위해 노력하고 있습니다. 또한, 한국 경제발전의 근간이 된 정책적 지식을 체계화하고, 경제발전경험 공유사업(KSP)을 기획·수행하여 협력국의 지속가능발전에 이바지하고 있습니다. 한편, 주요 협력국 정부와 세계은행, 유엔 등 국제기구, 민간부문과의 포괄적인 파트너십을 구축하여 효과적인 개발협력 생태계 조성을 도모하고 있습니다.</p>
+                    </div>
+                    <div class="pr_sec pr_edu">
+                        <h3 class="pr_tit">교육영상</h3>
+                        <div class="video_list_wrap">
+                            <ul class="video_list">
+                                <li>
+                                    <a href="https://www.youtube.com/embed/Cz0WujIBmGY?autoplay=1" class="btn_vid_edu">
+                                        <div class="img_box">
+                                            <!-- 유튜브 썸네일 이미지 https://img.youtube.com/vi/해당 영상코드/0.jpg -->
+                                            <img src="https://img.youtube.com/vi/Cz0WujIBmGY/0.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <p>[자유 토론] 한국 기업부문의 이중구조, 현재와 미래</p>
+                                            <span>영상시간 27:02</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/embed/Cz0WujIBmGY?autoplay=1" class="btn_vid_edu">
+                                        <div class="img_box">
+                                            <!-- 유튜브 썸네일 이미지 https://img.youtube.com/vi/해당 영상코드/0.jpg -->
+                                            <img src="https://img.youtube.com/vi/Cz0WujIBmGY/0.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <p>[자유 토론] 한국 기업부문의 이중구조, 현재와 미래</p>
+                                            <span>영상시간 27:02</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/embed/Cz0WujIBmGY?autoplay=1" class="btn_vid_edu">
+                                        <div class="img_box">
+                                            <!-- 유튜브 썸네일 이미지 https://img.youtube.com/vi/해당 영상코드/0.jpg -->
+                                            <img src="https://img.youtube.com/vi/Cz0WujIBmGY/0.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <p>[자유 토론] 한국 기업부문의 이중구조, 현재와 미래</p>
+                                            <span>영상시간 27:02</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/embed/Cz0WujIBmGY?autoplay=1" class="btn_vid_edu">
+                                        <div class="img_box">
+                                            <!-- 유튜브 썸네일 이미지 https://img.youtube.com/vi/해당 영상코드/0.jpg -->
+                                            <img src="https://img.youtube.com/vi/Cz0WujIBmGY/0.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <p>[자유 토론] 한국 기업부문의 이중구조, 현재와 미래</p>
+                                            <span>영상시간 27:02</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/embed/Cz0WujIBmGY?autoplay=1" class="btn_vid_edu">
+                                        <div class="img_box">
+                                            <!-- 유튜브 썸네일 이미지 https://img.youtube.com/vi/해당 영상코드/0.jpg -->
+                                            <img src="https://img.youtube.com/vi/Cz0WujIBmGY/0.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <p>[자유 토론] 한국 기업부문의 이중구조, 현재와 미래</p>
+                                            <span>영상시간 27:02</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/embed/Cz0WujIBmGY?autoplay=1" class="btn_vid_edu">
+                                        <div class="img_box">
+                                            <!-- 유튜브 썸네일 이미지 https://img.youtube.com/vi/해당 영상코드/0.jpg -->
+                                            <img src="https://img.youtube.com/vi/Cz0WujIBmGY/0.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <p>[자유 토론] 한국 기업부문의 이중구조, 현재와 미래</p>
+                                            <span>영상시간 27:02</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="" class="btn_vm">
+                            <span class="blind">더 보기</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <h2><a href="../html/index.html"><img src="../img/common/logo2.svg" alt="금융교육존" /></a></h2>
+        </div>
+    </div>
+    <div id="vid_edu" class="popup_wrap popup_video type_edu" style="display: none;">
+        <div class="popup taC">
+            <button type="button" class="btn_close_pop"><span class="blind">팝업 닫기</span></button>
+            <div class="video_tit">
+                <i><img src="../img/pr/pr_logo.png" alt=""></i><p class="">[자유 토론] 한국 기업부문의 이중구조, 현재와 미래 한국 기업부문의 이중구조, 현재와 미래</p>
+            </div>
+            <div class="video_box">
+                <iframe src="" class="video_ytb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video_nav">
+                <a href="" class="video_nav_btn video_prev">
+                    <i><img src="../img/pr/vid_arrow_prev.svg" alt=""></i>
+                    <span>이전영상</span>
+                    <p class="ellipsis">[자유 토론] 한국 기업부문한국 기업부문한국 기업부문한국 기업부문</p>
+                </a>
+                <a href="" class="video_nav_btn video_next">
+                    <i><img src="../img/pr/vid_arrow_next.svg" alt=""></i>
+                    <span>다음영상</span>
+                    <p class="ellipsis">[자유 토론] 한국 기업부문의 이중구한국 기업부문한국 기업부문</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="vid_promotion" class="popup_wrap popup_video" style="display: none;">
+        <div class="popup taC">
+            <button type="button" class="btn_close_pop type2"><span class="blind">팝업 닫기</span></button>
+            <div class="video_box">
+                <iframe src="" class="video_ytb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.btn_vid_edu').on('click',function(e){
+            e.preventDefault();
+            var url = $(this).attr('href');
+            $('#vid_edu').show();
+            $('#vid_edu .video_ytb').attr('src',url);
+        });
+        $('.btn_vid_promotion').on('click',function(e){
+            e.preventDefault();
+            var url = $(this).attr('href');
+            $('#vid_promotion').show();
+            $('#vid_promotion .video_ytb').attr('src',url);
+        });
+        $('.btn_close_pop').on('click',function(e){
+            e.preventDefault();
+            $(this).parents('.popup_wrap').hide();
+            if($(this).parents('.popup_wrap').find('.video_ytb')){
+                $(this).parents('.popup_wrap').find('.video_ytb').attr('src','');
+            }
+        });
+        $('.popup_wrap').on('click',function(e){
+            $(this).find('.btn_close_pop').trigger('click');
+        });
+        $('.popup_wrap .popup').on('click',function(e){
+            e.stopImmediatePropagation();      
+            e.stopPropagation();
+        });
+    </script>
+</body>
+</html>

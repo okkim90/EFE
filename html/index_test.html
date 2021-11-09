@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi"  name="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/font.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all" />
+    <!-- js -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="../js/common.js"></script>
+
+	<style>
+	.main_spot { position: relative; }
+	.main_spot lottie-player { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+	</style>
+
+   
+</head>
+<body>
+    <div id="skip_nav">
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb">메뉴 바로가기</a>
+    </div>
+    <div id="wrap" class="main">
+        <div id="header">
+            <div class="top_banner">
+                <div class="btn_box">
+                    <a href="" class="btn_close_today">오늘 하루 열지 않기</a>
+                    <a href="" class="btn_close" onclick="close_top_banner(this); return false;"><span class="blind">닫기</span> </a>
+                </div>
+                <a href="">
+                    <img src="../img/common/top_banner.png" alt="" class="pc_only">
+                    <img src="../img/common/top_banner_m.png" alt="" class="m_only">
+                </a>
+            </div>
+            <div class="header_inner">
+                <h1>
+                    <a href="../html/index.html">
+                        <span class="blind">경제금융교육존</span>
+                        <img src="../img/common/logo.svg" alt="">
+                    </a>
+                </h1>
+                <div class="btnSet">
+                    <!-- 실시간 off -->
+                    <a href="" onclick="show_popup(this); return false" class="btn_onAir on">ON-AIR</a>
+                    <!-- // 실시간 off -->
+                    <!-- 실시간 on -->
+                    <!-- <a href="" onclick="show_popup(this); return false" class="btn_onAir">ON-AIR</a> -->
+                    <!--// 실시간 on -->
+                    <div class="welcome">
+                        <a href="">
+                            <img src="../img/common/icon_user_m.png" alt="" class="my_icon">
+                            <span class="my_name">홍길동</span>    
+                        </a>
+                        님 반갑습니다.
+                    </div>
+                    <div class="my_like">
+                        <img src="../img/common/icon_like.svg" alt="">
+                        <span><em>내 하트</em> 24개</span>
+                    </div>
+                    <!-- <a href="" class="btn_login">로그인</a> -->
+                    <a href="" class="btn_logout">로그아웃</a>
+                </div>
+                <a href="" class="btn_menu">
+                    <span class="barTop"></span>
+                    <span class="barMid"></span>
+                    <span class="barBot"></span>
+                </a>
+                <div class="gnbWrap">
+                    <ul id="gnb" class="clearfix">
+                        <li>
+                            <a href="../html/pr_center.html">경제·금융교육존</a>
+                            <ul class="depth2">
+                                <li class="order0"><a href="../html/pr_center3.html">경제교육단체협의회</a></li>
+                                <li class="order6"><a href="../html/pr_center2.html">지역경제교육센터협의회</a></li>
+                                <br class="rp_br">
+                                <li class="order1">
+                                    <a href="">경제단체</a>
+                                    <ul class="depth3">
+                                        <li><a href="">대한상공회의소</a></li>
+                                        <li><a href="">중소기업중앙회</a></li>
+                                        <li><a href="">한국경영자총협회</a></li>
+                                        <li><a href="">한국무역협회</a></li>                              
+                                    </ul>
+                                </li>
+                                <li class="order2">
+                                    <a href="">공공기관</a>
+                                    <ul class="depth3">
+                                        <li><a href="">노사발전재단</a></li>
+                                        <li><a href="">서민금융진흥원</a></li>
+                                        <li><a href="">예금보험공사</a></li>
+                                        <li><a href="../html/pr_center.html">한국개발연구원</a></li>
+                                        <li><a href="">한국노동연구원</a></li>
+                                        <li><a href="">한국사회적기업진흥원</a></li>
+                                        <li><a href="">한국소비자원</a></li>
+                                        <li><a href="">한국조폐공사</a></li>
+                                    </ul>
+                                </li>
+                                <li class="order3">
+                                    <a href="">금융기관 및 단체</a>
+                                    <ul class="depth3">
+                                        <li><a href="">IBK기업은행</a></li>
+                                        <li><a href="">KDB산업은행</a></li>
+                                        <li><a href="">NH농협금융지주</a></li>
+                                        <li><a href="">신용회복위원회</a></li>
+                                        <li><a href="">신한은행</a></li>
+                                        <li><a href="">우리은행</a></li>
+                                        <li><a href="">청소년금융교육협의회</a></li>
+                                        <li><a href="">하나금융지주</a></li>
+                                        <li><a href="">한국수출입은행</a></li>
+                                        <li><a href="">KB금융공익재단</a></li>
+                                    </ul>
+                                </li>
+                                <li class="order4">
+                                    <a href="">기업 및 언론</a>
+                                    <ul class="depth3">
+                                        <li><a href="">매일경제신문 경제경영연구소</a></li>
+                                        <li><a href="">파이낸셜뉴스 FN이노에듀</a></li>
+                                        <li><a href="">한겨레 시민경제센터</a></li>
+                                        <li><a href="">한국경제신문 경제교육연구소</a></li>
+                                        <li><a href="">한국교육방송</a></li>
+                                        <li><a href="">포스코 인재창조원</a></li>                                       
+                                    </ul>
+                                </li>
+                                <li class="order5">
+                                    <a href="">시민단체</a>
+                                    <ul class="depth3">
+                                        <li><a href="">경제정의실천시민연합</a></li>
+                                        <li><a href="">금융과행복네트워크</a></li>
+                                        <li><a href="">서울YMCA</a></li>
+                                        <li><a href="">소비자공익네트워크</a></li>
+                                        <li><a href="">한국YWCA연합회</a></li>
+                                        <li><a href="">한국노동조합총연맹</a></li>
+                                        <li><a href="">한국스카우트연맹</a></li>
+                                        <li><a href="">JA코리아</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">마이페이지</a></li>
+                    </ul>
+                </div>
+                <div class="allMenuWrap">
+                    <a href="" class="close_allMenu"><img src="../img/common/close_allMenu.svg" alt="전체메뉴 닫기"></a>
+                    <ul class="allMenuBot_m">
+                        <li><a href="">로그아웃</a></li>
+                        <li><a href="">개인정보 처리방침</a></li>
+                        <li><a href="">관리자</a></li>
+                    </ul>
+                    <div class="allMenuInner">
+                        
+                        <ul class="allMenu">
+                            <li class="has_depth2">
+                                <a href="../html/pr_center.html">경제·금융교육존</a>
+                                <span class="am_toggle">경제·금융교육존<span class="icon_plus"></span></span>
+                                <ul class="depth2">
+                                    <li><a href="../html/pr_center3.html">경제교육단체협의회</a></li>
+                                    <li><a href="../html/pr_center2.html">지역경제교육센터협의회</a></li>
+                                    <br class="pc_only">
+                                    <li class="has_depth3">
+                                        <a href="">경제단체</a>
+                                        <span class="am_toggle">경제단체</span>
+                                        <ul class="depth3">
+                                            <li><a href="">대한상공회의소</a></li>
+                                            <li><a href="">중소기업중앙회</a></li>
+                                            <li><a href="">한국경영자총협회</a></li>
+                                            <li><a href="">한국무역협회</a></li>                              
+                                        </ul>
+                                    </li>
+                                    <li class="has_depth3">
+                                        <a href="">공공기관</a>
+                                        <span class="am_toggle">공공기관</span>
+                                        <ul class="depth3">
+                                            <li><a href="">노사발전재단</a></li>
+                                            <li><a href="">서민금융진흥원</a></li>
+                                            <li><a href="">예금보험공사</a></li>
+                                            <li><a href="../html/pr_center.html">한국개발연구원</a></li>
+                                            <li><a href="">한국노동연구원</a></li>
+                                            <li><a href="">한국사회적기업진흥원</a></li>
+                                            <li><a href="">한국소비자원</a></li>
+                                            <li><a href="">한국조폐공사</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has_depth3">
+                                        <a href="">금융기관 및 단체</a>
+                                        <span class="am_toggle">금융기관 및 단체</span>
+                                        <ul class="depth3">
+                                            <li><a href="">IBK기업은행</a></li>
+                                            <li><a href="">KDB산업은행</a></li>
+                                            <li><a href="">NH농협금융지주</a></li>
+                                            <li><a href="">신용회복위원회</a></li>
+                                            <li><a href="">신한은행</a></li>
+                                            <li><a href="">우리은행</a></li>
+                                            <li><a href="">청소년금융교육협의회</a></li>
+                                            <li><a href="">하나금융지주</a></li>
+                                            <li><a href="">한국수출입은행</a></li>
+                                            <li><a href="">KB금융공익재단</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has_depth3">
+                                        <a href="">기업 및 언론</a>
+                                        <span class="am_toggle">기업 및 언론</span>
+                                        <ul class="depth3">
+                                            <li><a href="">매일경제신문 경제경영연구소</a></li>
+                                            <li><a href="">파이낸셜뉴스 FN이노에듀</a></li>
+                                            <li><a href="">한겨레 시민경제센터</a></li>
+                                            <li><a href="">한국경제신문 경제교육연구소</a></li>
+                                            <li><a href="">한국교육방송</a></li>
+                                            <li><a href="">포스코 인재창조원</a></li>                                       
+                                        </ul>
+                                    </li>
+                                    <li class="has_depth3">
+                                        <a href="">시민단체</a>
+                                        <span class="am_toggle">시민단체</span>
+                                        <ul class="depth3">
+                                            <li><a href="">경제정의실천시민연합</a></li>
+                                            <li><a href="">금융과행복네트워크</a></li>
+                                            <li><a href="">서울YMCA</a></li>
+                                            <li><a href="">소비자공익네트워크</a></li>
+                                            <li><a href="">한국YWCA연합회</a></li>
+                                            <li><a href="">한국노동조합총연맹</a></li>
+                                            <li><a href="">한국스카우트연맹</a></li>
+                                            <li><a href="">JA코리아</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">이벤트</a></li>
+                            <li><a href="">마이페이지</a></li>
+                        </ul>
+                        <ul class="allMenuBot">
+                            <li><a href="">개인정보 처리방침</a></li>
+                            <li><a href="">관리자</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+			<div class="content">
+                <div class="spot_wrap">
+                    <div class="main_spot">
+                        <img src="../img/main/main_visual.png" alt="" class="main_img" style="opacity:0">
+						<lottie-player src="../js/main.json" background="transparent" style="width: 100%; height: 100%;" speed="1" loop autoplay></lottie-player>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+	<script>
+		$(function(){
+			$(window).on('load resize',function(){
+				$('.spot_wrap').height($(this).height());
+			});
+			
+		});
+	</script>	
+</body>
+</html>
