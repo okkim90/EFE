@@ -137,6 +137,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    z-index: 99;
 }
 .main_spot img.main_img {
     position: absolute;
@@ -323,6 +324,49 @@
 }
 
 
+
+
+.main_meta {height: 100vh;background-color: #fff;}
+.main_meta_inner {
+    height: 100%;
+    max-width: 1516px;
+    padding: 0 60px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.main_meta .txt_box {
+    
+    padding-bottom: 10vh;
+}
+.main_meta .txt_box h2 {
+    font-size: 58px;
+    line-height: 1.24;
+    font-weight: 500;
+    color: #000;
+}
+.main_meta .txt_box p {
+    font-size: 18px;
+    line-height: 1.78;
+    margin-top: 50px;
+    color: #000;
+}
+.main_meta .txt_box a {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-right: 96px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    line-height: 32px;
+    margin-top: 60px;
+}
+.main_meta .img_box img.bg_tablet {
+    display: none;
+}
+
 .popup_wrap {
     position: fixed;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0,0,0,.6);z-index: 99999;display: flex;align-items: center;justify-content: center;
 }
@@ -426,6 +470,41 @@
 
 	.link_kye , .msg_compatibility {display: none;}
 
+
+    .main_meta {
+        height: auto;
+        
+        
+    }
+    .main_meta_inner {
+        
+        display: block;
+        padding-top: 150px;
+        padding-bottom: 57px;
+        box-sizing: border-box;
+    }
+    .main_meta .txt_box {
+        padding-bottom: 0;
+    }
+    .main_meta .txt_box h2 {
+        font-size: 42px;
+    }
+    .main_meta .txt_box p {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .main_meta .img_box {
+        margin: 0 -60px;
+        margin-top: 60px;
+    }
+    .main_meta .img_box img.bg_tablet {
+        display: block;
+    }
+    .main_meta .img_box img.bg_common {
+        display: none;
+    }
+
+
 }
 @media screen and (max-width: 900px) {
     #header .top_banner img {height: 50px;}
@@ -513,9 +592,10 @@
     .main_lottie.type_m {display: block;}
 
     #wrap.main, #container.main {height: 100%;}
-    .spot_wrap {height: auto;width: 100%;min-height: 100%;
+    .spot_wrap {height: auto;width: 100%;min-height: 100vh;
     display: flex;align-items: center;
     overflow-x: hidden;
+
     }
     .main_spot {width: 100% !important;position: relative;overflow: hidden;}
 	.main_spot .ovWrap {overflow: hidden;}
@@ -590,4 +670,44 @@
 
 	.main_spot .ovBox .spotList {display: none;}
     .main_spot .ovBox.on .spotList {display: block;}
+
+
+    .main_meta {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .main_meta_inner {
+        padding: 0 24px;
+        padding-top: 91px;
+        padding-bottom: 50px;
+        
+    }
+    .main_meta .img_box {
+        margin: 0;
+        margin-top: 42px;
+    }
+    .main_meta .img_box img.bg_tablet {
+        display: none;
+    }
+    .main_meta .img_box img.bg_common {
+        display: block;
+    }
+    .main_meta .txt_box h2 {
+        font-size: 28px;
+    }
+    .main_meta .txt_box p {
+        font-size: 12px;
+        margin-top: 18px;
+    }
+    .main_meta .txt_box a {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 767px){ 
+    
 }

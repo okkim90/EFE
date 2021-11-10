@@ -12,6 +12,10 @@
     <link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
     <link rel="stylesheet" type="text/css" href="../css/layout.css" media="all" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" media="all" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <!-- js -->
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/common.js"></script>
@@ -25,7 +29,7 @@
         <div id="header">
             <div class="top_banner">
                 <div class="btn_box">
-                    <a href="" class="btn_close_today">오늘 하루 열지 않기.</a>
+                    <a href="" class="btn_close_today">오늘 하루 열지 않기</a>
                     <a href="" class="btn_close" onclick="close_top_banner(this); return false;"><span class="blind">닫기</span> </a>
                 </div>
                 <a href="">
@@ -238,99 +242,124 @@
             </div>
         </div>
         <div id="container" class="main">
-            <div class="spot_wrap">
-                <div class="main_spot">
-                    <!-- <img src="../img/main/main_visual.png" alt="" class="main_img"> -->
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                    <lottie-player src="../js/main.json" background="transparent" class="main_lottie type_pc" style="width: 100%;height: 100%;" speed="1" loop autoplay></lottie-player>
-                    <img src="../img/main/main_bg.png" alt="" class="main_img type_pc">
 
 
-                    <lottie-player src="../js/main_m.json" background="transparent" class="main_lottie type_m" style="width: 100%;height: 100%;" speed="1" loop autoplay></lottie-player>
-                    <img src="../img/main/main_bg_m.png" alt="" class="main_img type_m">
-                    <div class="ovWrap">
-                        <div class="ovBox spot1"><a href=""></a></div>
-                        <div class="ovBox spot2"><a href=""></a></div>
-                        <div class="ovBox spot3 hasDep">
-                            <a href=""></a>
-                            <div class="spotList">
-                                <ul>
-                                    <li><a href="">대한상공회의소</a></li>
-                                    <li><a href="">중소기업중앙회</a></li>
-                                    <li><a href="">한국경영자총협회</a></li>
-                                    <li><a href="">한국무역협회</a></li>      
-                                </ul>
+            <div class="swiper main_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="spot_wrap">
+                            <div class="main_spot">
+                                <!-- <img src="../img/main/main_visual.png" alt="" class="main_img"> -->
+                                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player src="../js/main.json" background="transparent" class="main_lottie type_pc" style="width: 100%;height: 100%;" speed="1" loop autoplay></lottie-player>
+                                <img src="../img/main/main_bg.png" alt="" class="main_img type_pc">
+            
+            
+                                <lottie-player src="../js/main_m.json" background="transparent" class="main_lottie type_m" style="width: 100%;height: 100%;" speed="1" loop autoplay></lottie-player>
+                                <img src="../img/main/main_bg_m.png" alt="" class="main_img type_m">
+                                <div class="ovWrap">
+                                    <div class="ovBox spot1"><a href=""></a></div>
+                                    <div class="ovBox spot2"><a href=""></a></div>
+                                    <div class="ovBox spot3 hasDep">
+                                        <a href=""></a>
+                                        <div class="spotList">
+                                            <ul>
+                                                <li><a href="">대한상공회의소</a></li>
+                                                <li><a href="">중소기업중앙회</a></li>
+                                                <li><a href="">한국경영자총협회</a></li>
+                                                <li><a href="">한국무역협회</a></li>      
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="ovBox spot4 hasDep">
+                                        <a href=""></a>
+                                        <div class="spotList">
+                                            <ul>
+                                                <li><a href="">노사발전재단</a></li>
+                                                <li><a href="">서민금융진흥원</a></li>
+                                                <li><a href="">예금보험공사</a></li>
+                                                <li><a href="../html/pr_center.html">한국개발연구원</a></li>
+                                                <li><a href="">한국노동연구원</a></li>
+                                                <li><a href="">한국사회적기업진흥원</a></li>
+                                                <li><a href="">한국소비자원</a></li>
+                                                <li><a href="">한국조폐공사</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="ovBox spot5 hasDep">
+                                        <a href=""></a>
+                                        <div class="spotList">
+                                            <ul>
+                                                <li><a href="">IBK기업은행</a></li>
+                                                <li><a href="">KDB산업은행</a></li>
+                                                <li><a href="">NH농협금융지주</a></li>
+                                                <li><a href="">신용회복위원회</a></li>
+                                                <li><a href="">신한은행</a></li>
+                                                <li><a href="">우리은행</a></li>
+                                                <li><a href="">청소년금융교육협의회</a></li>
+                                                <li><a href="">하나금융지주</a></li>
+                                                <li><a href="">한국수출입은행</a></li>
+                                                <li><a href="">KB금융공익재단</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="ovBox spot6 hasDep">
+                                        <a href=""></a>
+                                        <div class="spotList">
+                                            <ul>
+                                                <li><a href="">매일경제신문</a></li>
+                                                <li><a href="">파이낸셜뉴스</a></li>
+                                                <li><a href="">포스코</a></li>
+                                                <li><a href="">한겨례</a></li>
+                                                <li><a href="">한국경제신문</a></li>
+                                                <li><a href="">한국교육방송</a></li>     
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="ovBox spot7 hasDep">
+                                        <a href=""></a>
+                                        <div class="spotList">
+                                            <ul>
+                                                <li><a href="">경제정의실천시민연합</a></li>
+                                                <li><a href="">금융과행복네트워크</a></li>
+                                                <li><a href="">서울YMCA</a></li>
+                                                <li><a href="">소비자공익네트워크</a></li>
+                                                <li><a href="">한국YWCA연합회</a></li>
+                                                <li><a href="">한국노동조합총연맹</a></li>
+                                                <li><a href="">한국스카우트연맹</a></li>
+                                                <li><a href="">JA코리아</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             
                         </div>
-                        <div class="ovBox spot4 hasDep">
-                            <a href=""></a>
-                            <div class="spotList">
-                                <ul>
-                                    <li><a href="">노사발전재단</a></li>
-                                    <li><a href="">서민금융진흥원</a></li>
-                                    <li><a href="">예금보험공사</a></li>
-                                    <li><a href="../html/pr_center.html">한국개발연구원</a></li>
-                                    <li><a href="">한국노동연구원</a></li>
-                                    <li><a href="">한국사회적기업진흥원</a></li>
-                                    <li><a href="">한국소비자원</a></li>
-                                    <li><a href="">한국조폐공사</a></li>
-                                </ul>
-                            </div>
-                            
-                        </div>
-                        <div class="ovBox spot5 hasDep">
-                            <a href=""></a>
-                            <div class="spotList">
-                                <ul>
-                                    <li><a href="">IBK기업은행</a></li>
-                                    <li><a href="">KDB산업은행</a></li>
-                                    <li><a href="">NH농협금융지주</a></li>
-                                    <li><a href="">신용회복위원회</a></li>
-                                    <li><a href="">신한은행</a></li>
-                                    <li><a href="">우리은행</a></li>
-                                    <li><a href="">청소년금융교육협의회</a></li>
-                                    <li><a href="">하나금융지주</a></li>
-                                    <li><a href="">한국수출입은행</a></li>
-                                    <li><a href="">KB금융공익재단</a></li>
-                                </ul>
-                            </div>
-                            
-                        </div>
-                        <div class="ovBox spot6 hasDep">
-                            <a href=""></a>
-                            <div class="spotList">
-                                <ul>
-                                    <li><a href="">매일경제신문</a></li>
-                                    <li><a href="">파이낸셜뉴스</a></li>
-                                    <li><a href="">포스코</a></li>
-                                    <li><a href="">한겨례</a></li>
-                                    <li><a href="">한국경제신문</a></li>
-                                    <li><a href="">한국교육방송</a></li>     
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="ovBox spot7 hasDep">
-                            <a href=""></a>
-                            <div class="spotList">
-                                <ul>
-                                    <li><a href="">경제정의실천시민연합</a></li>
-                                    <li><a href="">금융과행복네트워크</a></li>
-                                    <li><a href="">서울YMCA</a></li>
-                                    <li><a href="">소비자공익네트워크</a></li>
-                                    <li><a href="">한국YWCA연합회</a></li>
-                                    <li><a href="">한국노동조합총연맹</a></li>
-                                    <li><a href="">한국스카우트연맹</a></li>
-                                    <li><a href="">JA코리아</a></li>
-                                </ul>
+                        <div class="main_bg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main_meta">
+                            <div class="main_meta_inner">
+                                <div class="txt_box">
+                                    <h2>경제·금융교육존 <br> 메타버스 체험</h2>
+                                    <p>경제·금융교육과 함께 꿈꾸고 상상하고 새롭게 만들어내며, <br> 새로운 도전과 즐거운 체험이 있는 경제·금융교육존 메타버스를 체험해보세요!</p>
+                                    <a href="">바로 체험하기</a>
+                                </div>
+                                <div class="img_box">
+                                    <img src="../img/main/main_bg2.png" alt="" class="bg_common">
+                                    <img src="../img/main/main_bg2_tablet.png" alt="" class="bg_tablet">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-				
             </div>
-            <div class="main_bg"></div>
-			<a href="http://www.koreayouthexpo.com/" target="_blank" class="link_kye">청소년 박람회 바로가기</a>
+            
+            
+			<a href="http://www.koreayouthexpo.com/" target="_blank" class="link_kye">2021 대한민국교육기부박람회 바로가기</a>
 			<p class="msg_compatibility">경제·금융교육존은 구글 크롬 브라우저에 최적화되어 있습니다.</p>
         </div>
     </div>
@@ -397,6 +426,7 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script>
         $(function(){
             
@@ -420,6 +450,18 @@
 			$('.spot_wrap').on('click',function(){
 				$('.ovBox').removeClass('on')
 			});
+
+            const swiper = new Swiper('.main_slide', {
+                //allowTouchMove: false,
+                //autoHeight: true,
+                effect: "fade",
+
+                breakpoints: {
+                    809 : {
+                        //autoHeight: true, 
+                    }
+                }
+            });
         });
         function bg_resize(){
             $('.main_spot').width($('.main_spot').height()*1.7777);
