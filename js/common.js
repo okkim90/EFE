@@ -23,8 +23,8 @@ $(function(){
     $('#wrap').click(function(e){
         if( !$('.lnb > ul').has(e.target).length ) $('.lnb_list').hide();
     });
-    
-    
+
+
     $('.am_toggle').on('click',function(){
         if($(this).parent().hasClass('on')){
             $(this).next('ul').slideUp(200).parent().removeClass('on').find('ul');
@@ -35,8 +35,8 @@ $(function(){
     });
 
     contHeight();
-    
-    
+
+
 });
 $(window).resize(function(){
     contHeight();
@@ -46,7 +46,7 @@ $(window).resize(function(){
 function close_pop(_target){
     var $this = $(_target);
     $this.parents('.popup_wrap').css('display','none');
-    
+
 }
 
 function close_top_banner(_target){
@@ -59,10 +59,10 @@ function close_top_banner(_target){
 
 function contHeight(){
     let headerHeight = $('#header').outerHeight();
-    let footerHeight = $('#footer').outerHeight();    
+    let footerHeight = $('#footer').outerHeight();
     let maxHeight = $(window).height() - (headerHeight + footerHeight);
     $('.max_height').css({
        'margin-top' : headerHeight,
-       'min-height' : maxHeight 
-    }); 
+       'min-height' : maxHeight
+    });
 }

@@ -26,7 +26,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 2; /* 라인수 */
     -webkit-box-orient: vertical;
-    word-wrap:break-word; 
+    word-wrap:break-word;
 }
 
 
@@ -100,7 +100,7 @@
 #header .allMenuWrap .allMenu .depth2 > li {display: inline-block;width: 200px; margin-top: 37px;vertical-align: top;}
 #header .allMenuWrap .allMenu .depth2 > li > a {font-size: 18px;line-height: 24px;font-weight: 500;}
 #header .allMenuWrap .allMenu .depth3 {padding-top: 11px;}
-#header .allMenuWrap .allMenu .depth3 > li + li {margin-top: 6px;} 
+#header .allMenuWrap .allMenu .depth3 > li + li {margin-top: 6px;}
 #header .allMenuWrap .allMenu .depth3 > li > a {font-size: 14px;line-height: 22px;font-weight: 400;}
 #header .allMenuWrap .allMenu .depth3 > li:hover > a {font-weight: 500;}
 #header .allMenuWrap .allMenuBot {position: absolute;bottom: 0;left: 60px;right: 60px;padding-top: 18px; border-top: 2px solid rgba(255,255,255,.5);font-size: 0;}
@@ -337,7 +337,7 @@
     align-items: center;
 }
 .main_meta .txt_box {
-    
+
     padding-bottom: 10vh;
 }
 .main_meta .txt_box h2 {
@@ -401,8 +401,45 @@
 
 
 
+.exp_wrap {
+    position: absolute;
+    right: 60px;
+    bottom: 48px;
+    z-index: 99;
+}
+.exp_wrap strong {
+    display: block;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 5px;
+    color: #3774DF;
+    font-weight: bold;
+}
+.exp_wrap .exp_box {
+    line-height: 0;
+    height: 16px;
+    position: relative;
+    width: 258px;
+    background-color: #D2D2D2;
+}
+.exp_wrap .exp_bar {
+    height: 100%;
+    background-color: #3774DF;
+}
+.exp_wrap .exp_count {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #fff;
+}
 
-@media screen and (max-width: 1439px){ 
+
+@media screen and (max-width: 1439px){
     #header .gnbWrap {padding-left: 270px;}
     #header .gnbWrap #gnb .rp_br {display: block;}
     #header .gnbWrap #gnb:hover .depth2 {display: block;}
@@ -416,14 +453,14 @@
 }
 
 
-@media screen and (max-width: 1160px){ 
+@media screen and (max-width: 1160px){
 	#header .gnbWrap #gnb {display: none;}
     #header .top_banner img {height: 70px;}
 }
 
 
 
-@media screen and (max-width: 1024px){ 
+@media screen and (max-width: 1024px){
     #header .allMenuWrap {padding: 100px 0 69px;}
     #header .allMenuWrap .close_allMenu {width: 36px;height: 36px;top: 60px;right: 60px;}
     #header .allMenuWrap .allMenu > li.has_depth2 > a,
@@ -444,7 +481,7 @@
     #header .allMenuWrap .allMenu .has_depth3 > .am_toggle {position: relative;}
     #header .allMenuWrap .allMenu .has_depth3 > .am_toggle:after {content:'';position: absolute;width: 16px;height: 8px;background-image: url(../img/common/depth3_arrow.svg);background-repeat: no-repeat;background-position: center center;right: 0;top: 50%;transform: translateY(-50%);transition: all .2s ease-in-out;}
     #header .allMenuWrap .allMenu .has_depth3.on > .am_toggle:after {transform: rotate(180deg);}
-    #header .allMenuWrap .allMenu > li > a, 
+    #header .allMenuWrap .allMenu > li > a,
     #header .allMenuWrap .allMenu > li > .am_toggle {font-size: 32px;color: #fff;line-height: 95px;font-weight: bold;}
     #header .allMenuWrap .allMenu .depth2 > li > a,
     #header .allMenuWrap .allMenu .depth2 > li > .am_toggle {font-size: 18px;line-height: 40px;font-weight: normal;}
@@ -466,18 +503,18 @@
     .main_spot .spotList {width: auto;padding: 15px;}
 	.main_spot .spotList li a {font-size: 13px;line-height: 22px;white-space: nowrap;}
 	.main_spot .ovBox .spotList::before {border-width: 17px !important;}
-	.main_spot .ovBox .spotList::after {border-width: 16px !important;}	
+	.main_spot .ovBox .spotList::after {border-width: 16px !important;}
 
 	.link_kye , .msg_compatibility {display: none;}
 
 
     .main_meta {
         height: auto;
-        
-        
+        min-height: 100vh;
+
     }
     .main_meta_inner {
-        
+
         display: block;
         padding-top: 150px;
         padding-bottom: 57px;
@@ -559,7 +596,7 @@
     #header .top_banner .btn_box {right: 24px;}
     #header .top_banner .btn_box a.btn_close_today {display: none;}
     #header .top_banner .btn_box {margin-top: 0;transform: translateY(-50%);}
-    
+
     #footer {padding-top: 12px;padding-bottom: 12px;}
 	#footer h2 {line-height: 0;}
 	#footer h2 a {display: inline-block;vertical-align: top;}
@@ -622,7 +659,7 @@
         width: 27%;
     }
     .main_spot .ovBox.spot2 {
-       
+
 		 left: 38%;
         top: 30%;
         height: 9%;
@@ -681,7 +718,7 @@
         padding: 0 24px;
         padding-top: 91px;
         padding-bottom: 50px;
-        
+
     }
     .main_meta .img_box {
         margin: 0;
@@ -708,6 +745,6 @@
 
 
 
-@media screen and (max-width: 767px){ 
-    
+@media screen and (max-width: 767px){
+
 }

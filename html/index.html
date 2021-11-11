@@ -253,8 +253,8 @@
                                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player src="../js/main.json" background="transparent" class="main_lottie type_pc" style="width: 100%;height: 100%;" speed="1" loop autoplay></lottie-player>
                                 <img src="../img/main/main_bg.png" alt="" class="main_img type_pc">
-            
-            
+
+
                                 <lottie-player src="../js/main_m.json" background="transparent" class="main_lottie type_m" style="width: 100%;height: 100%;" speed="1" loop autoplay></lottie-player>
                                 <img src="../img/main/main_bg_m.png" alt="" class="main_img type_m">
                                 <div class="ovWrap">
@@ -267,10 +267,10 @@
                                                 <li><a href="">대한상공회의소</a></li>
                                                 <li><a href="">중소기업중앙회</a></li>
                                                 <li><a href="">한국경영자총협회</a></li>
-                                                <li><a href="">한국무역협회</a></li>      
+                                                <li><a href="">한국무역협회</a></li>
                                             </ul>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="ovBox spot4 hasDep">
                                         <a href=""></a>
@@ -286,7 +286,7 @@
                                                 <li><a href="">한국조폐공사</a></li>
                                             </ul>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="ovBox spot5 hasDep">
                                         <a href=""></a>
@@ -304,7 +304,7 @@
                                                 <li><a href="">KB금융공익재단</a></li>
                                             </ul>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="ovBox spot6 hasDep">
                                         <a href=""></a>
@@ -315,7 +315,7 @@
                                                 <li><a href="">포스코</a></li>
                                                 <li><a href="">한겨례</a></li>
                                                 <li><a href="">한국경제신문</a></li>
-                                                <li><a href="">한국교육방송</a></li>     
+                                                <li><a href="">한국교육방송</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -357,15 +357,18 @@
                     </div>
                 </div>
             </div>
-            
-            
+
+
 			<a href="http://www.koreayouthexpo.com/" target="_blank" class="link_kye">2021 대한민국교육기부박람회 바로가기</a>
 			<p class="msg_compatibility">경제·금융교육존은 구글 크롬 브라우저에 최적화되어 있습니다.</p>
-            <div class="exp_wrap">
-                <div class="exp_box" data-exp="13600">
-                    <span class="exp_bar"></span>
+            <article class="exp_wrap">
+                <strong>경제·금융교육 활동지수</strong>
+                <div class="exp_box">
+                    <span class="exp_bar" data-max="7600" data-current="3700">
+                        <span class="exp_count"></span>
+                    </span>
                 </div>
-            </div>
+            </article>
         </div>
     </div>
     <div class="popup_wrap popup_intro">
@@ -463,14 +466,55 @@
 
                 breakpoints: {
                     809 : {
-                        //autoHeight: true, 
+                        //autoHeight: true,
                     }
                 }
             });
+
+            // 경험치 박스 이벤트
+            $(window).on('load',function(){
+                setTimeout(function(){
+                    exp();
+                },400);
+
+            })
+
         });
         function bg_resize(){
             $('.main_spot').width($('.main_spot').height()*1.7777);
         }
+
+
+
+        function exp(){
+            $('.exp_bar').each(function(){
+                $(this).animate({
+                    width: ($(this).data('current')*100)/$(this).data('max') + '%'
+                }, 1200);
+                $(this).find('.exp_count').animate(
+                    {
+                        Counter: $(this).data('current')
+                    },
+                    {
+                        duration: 1200,
+                        easing: 'swing',
+                        step: function(now) {
+                            $(this).html(commaSeparateNumber(Math.ceil(now)) + ' EXP');
+                        }
+                    }
+                );
+            });
+
+        }
+
+        function commaSeparateNumber(val){
+            while (/(\d+)(\d{3})/.test(val.toString())){
+            val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+            }
+            return val;
+        }
+
+
 
     </script>
 </body>
