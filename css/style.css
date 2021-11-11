@@ -13,7 +13,7 @@
 .fc_purple {color: #3D1C60 !important;}
 .fc_red {color: #EC4041 !important;}
 
-.event_top {margin-top: 60px; background: #D2F4FF url('../img/event/event_top.svg') no-repeat 80% 100%;}
+.event_top {margin-top: 60px; background: #D2F4FF url('../img/event/event_top.svg') no-repeat 82% 100%;} /* 2021-11-02 수정 */
 .event_top .inner {display: table; position: relative; margin: 0 auto; width: 1320px;}
 .event_top .txt_group {display: table-cell; height: 437px; vertical-align: middle;}
 .event_top .txt_group .title_detail {margin-bottom: 22px; color: #3D1C60; line-height: 24px; font-size: 16px;}
