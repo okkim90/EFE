@@ -29,6 +29,10 @@
     word-wrap:break-word;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 
 #header {position: fixed;width: 100%;left: 0;top: 0;background-color: #fff;z-index: 9999;border-bottom: 1px solid #d2d2d2;}
 #header .top_banner {position: relative;text-align: center;}
@@ -400,6 +404,122 @@
 .popup_wrap.popup_time .popup_cont .btn_evt span {display: inline-block;vertical-align: top;font-size: 18px; line-height: 48px;color: #ec4041;background-image: url(../img/main/time_arrow.svg);background-repeat: no-repeat;background-position: right center;padding-right: 50px;}
 
 
+.popup_wrap.popup_myinfo .popup {width: 572px;background-color: #fff;}
+.popup_wrap.popup_myinfo .popup_cont {padding: 58px 62px 60px;}
+.popup_myinfo_tit {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    color: #3d1c60;
+    font-weight: bold;
+    margin-bottom: 49px;
+}
+.popup_myinfo .popup_input_area + .popup_input_area {
+    margin-top: 19px;
+}
+.popup_myinfo .popup_input_area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.popup_myinfo .popup_input_area dt {
+    width: 96px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    flex-shrink: 0;
+}
+
+.popup_myinfo .popup_input_area dt .fc_red {
+    color: #de0d2b;
+}
+.popup_myinfo .popup_input_area dd {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.popup_myinfo .input {
+    flex:1;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+    height: 51px;
+    box-sizing: border-box;
+    padding: 0 24px;
+    font-size: 18px;
+    color: #3d1c60;
+    font-weight: bold;
+    width: 0;
+}
+.popup_myinfo .dash {
+    width: 27px;
+    flex-shrink: 0;
+    text-align: center;
+}
+.input_origin {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    z-index: -999;
+}
+.input_origin:checked ~ .input_custom {
+    background-image: url(../img/common/ico_check.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.input_custom {
+    display: inline-block;
+    vertical-align: top;
+    width: 21px;
+    height: 21px;
+    border-radius: 3px;
+    border: 2px solid #3774df;
+    box-sizing: border-box;
+}
+.popup_myinfo_check {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #666;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.popup_myinfo_check a {
+    color: #666;
+}
+.popup_myinfo_check .input_custom {
+    margin-right: 10px;
+}
+
+.popup_myinfo .popup_btn_area {
+    margin-top: 57px;
+}
+.popup_myinfo .popup_btn {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 136px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    line-height: 38px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #3774df;
+    border-radius: 19px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
 
 .exp_wrap {
     position: absolute;
@@ -437,6 +557,31 @@
     font-weight: bold;
     color: #fff;
 }
+
+.exp_wrap.type_mypage {
+    display: block;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+.exp_wrap.type_mypage .exp_box {
+    width: 100%;
+    height: 17px;
+
+}
+.exp_wrap.type_mypage .exp_bar {
+    position: relative;
+}
+
+.exp_wrap.type_mypage .exp_count {
+    position: absolute;
+    right: 12px;
+    left: auto;
+    line-height: 17px;
+    white-space: nowrap;
+    width: auto;
+}
+
 
 
 @media screen and (max-width: 1439px){
@@ -505,7 +650,7 @@
 	.main_spot .ovBox .spotList::before {border-width: 17px !important;}
 	.main_spot .ovBox .spotList::after {border-width: 16px !important;}
 
-	.link_kye , .msg_compatibility {display: none;}
+	.link_kye , .msg_compatibility , .exp_wrap {display: none;}
 
 
     .main_meta {
@@ -539,6 +684,39 @@
     }
     .main_meta .img_box img.bg_common {
         display: none;
+    }
+
+
+
+    .popup_wrap.popup_myinfo .popup {
+        width: 490px;
+    }
+    .popup_wrap.popup_myinfo .popup_cont {
+        padding: 50px 53px;
+    }
+    .popup_myinfo_tit {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 45px;
+    }
+    .popup_myinfo .popup_input_area dt {
+        width: 82px;
+        font-size: 12px;
+    }
+    .popup_myinfo .input {
+        height: 44px;
+        padding: 0 21px;
+        font-size: 14px;
+    }
+    .popup_myinfo .popup_input_area + .popup_input_area {
+        margin-top: 17px;
+    }
+    .popup_myinfo_check {
+        font-size: 13px;
+        margin-top: 26px;
+    }
+    .popup_myinfo .popup_btn_area {
+        margin-top: 51px;
     }
 
 
@@ -741,6 +919,56 @@
         font-size: 12px;
         margin-top: 30px;
     }
+
+
+    .popup_wrap.popup_myinfo .popup {
+        width: 312px;
+    }
+    .popup_wrap.popup_myinfo .popup_cont {
+        padding: 30px 24px;
+    }
+    .popup_myinfo_tit {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 24px;
+    }
+    .popup_myinfo .popup_input_area dt {
+        width: 73px;
+        font-size: 10px;
+    }
+    .popup_myinfo .input {
+        height: 27px;
+        padding: 0 9px;
+        font-size: 12px;
+    }
+    .popup_myinfo .popup_input_area + .popup_input_area {
+        margin-top: 10px;
+    }
+    .popup_myinfo_check {
+        font-size: 10px;
+        margin-top: 16px;
+        line-height: 16px;
+    }
+    .popup_myinfo .popup_btn_area {
+        margin-top: 23px;
+    }
+    .popup_myinfo .popup_btn {
+        min-width: 96px;
+        padding: 0 10px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+    .popup_myinfo .dash {
+        width: 15px;
+    }
+    .input_custom {
+        width: 16px;
+        height: 16px;
+    }
+    .popup_myinfo_check .input_custom {
+        margin-right: 6px;
+    }
+
 }
 
 
