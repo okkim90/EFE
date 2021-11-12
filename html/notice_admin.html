@@ -29,15 +29,25 @@
                       <div class="wrap_notice_admin">
                         <div class="view_head">
                           <strong class="tit_view">보도자료 작성</strong>
+                          <div class="wrap_inp">
+                            <input type="text" placeholder="제목을 입력하세요." class="inp_txt">
+                          </div>
                         </div>
                         <div class="view_body">
-                          <div class="body_inner" style="height: 500px;border:1px solid #eee">
-                          
-                          </div>
-                          <div class="box_noticeFile"><span class="txt_file">파일</span><a href="" class="link_down" download>첨부파일.pdf (350kb)</a></div>
+                          <div class="body_inner" style="height: 500px;border:1px solid #eee"><!-- 임시 스타일 에디터 삽입 후 삭제 --></div>
+                          <div class="box_noticeFile">
+                            <span class="txt_file">파일</span>
+                            <label for="file" class="lab_inpFile">
+                              <span class="btn_file">파일선택</span>
+                              <input type="file" id="file" name="" class="inp_file">
+                            <span class="txt_inp">선택된 파일 없음</span><!-- 파일 넣은 후 파일 이름 + 확장자 넣기 -->
+                          </label>
                         </div>
-                        <a href="notice.html" class="btn_tblList">목록</a>
-                        <a href="notice.html" class="btn_tblList type_register">등록</a>
+                        </div>
+                        <div class="wrap_btn">
+                          <a href="notice.html" class="btn_tblList">목록</a>
+                          <a href="notice.html" class="btn_tblList type_register">등록</a>
+                        </div>  
                       </div>
                     </div>
                 </div>

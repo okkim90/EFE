@@ -450,10 +450,22 @@
 .view_nav .nav_area .link_nav {display: flex;align-items: center;height: 82px;flex:1;}
 .view_nav .link_nav .txt_cont {display: -webkit-box;max-height:38px;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
 .btn_tblList {display: block;margin-top: 45.5px;width:156px;line-height: 44px;border: 1px solid #000;text-align: center;font-size: 14px;letter-spacing: 1.4px;}
+
 .btn_tblList.type_register {float: right;}
 .wrap_notice_admin {padding: 150px 0;max-width: 872px;margin: 0 auto}
+.wrap_notice_admin .view_head {padding-bottom: 0;border-bottom: 2px solid #464749;}
 .wrap_notice_admin .view_head .tit_view {text-align: left;}
-
+.view_head .wrap_inp .inp_txt {border: none;display: block;margin-top: 77px;padding:16px 0;font-size: 14px;color: #464749;line-height: 17px;}
+.view_head .wrap_inp .inp_txt::placeholder{color:#464749}
+.wrap_notice_admin .view_body{padding: 24.5px 0 54px;}
+.wrap_notice_admin .wrap_btn {display: flex;justify-content: space-between;margin-top: 50px;}
+.wrap_notice_admin .wrap_btn .btn_tblList {margin-top: 0;}
+.wrap_notice_admin .view_body .box_noticeFile {padding-top: 40px;}
+.wrap_notice_admin .view_body .box_noticeFile .txt_file {margin-top:5px;color:#464749;font-weight: bold;}
+.box_noticeFile .lab_inpFile {position:relative;display: inline-block; margin-left: 40px;}
+.box_noticeFile .lab_inpFile .btn_file {display:inline-block;width: 124px;height: 34px;border-radius: 21px;border: solid 1px #464749; font-size: 13px;font-weight: bold;line-height: 32px; color: #464749;box-sizing: border-box;text-align: center; vertical-align: top;}
+.box_noticeFile .lab_inpFile .inp_file {display: none;}
+.box_noticeFile .lab_inpFile .txt_inp {margin-left: 16px; font-size: 14px;line-height: 34px;color:#464749;}
 
 
 @media screen and (max-width: 1440px){
@@ -753,6 +765,7 @@
 .tbl_notice td {height: 65px;font-size: 14px;line-height: 17px;}
 .tbl_notice td .link_tit{padding: 10px 0 20px 13px;}
 .tbl_notice td .link_tit .txt_tit{max-height: 34px;}
+.tbl_notice td .link_down .ico_down{width: 14px;height: 17.5px;}
 
 .wrap_notice_veiw {padding-top: 74px;}
 .wrap_notice_veiw .view_head {padding-bottom: 32px;}
