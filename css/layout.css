@@ -456,7 +456,13 @@
     flex-shrink: 0;
     text-align: center;
 }
-
+.input_origin {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    z-index: -999;
+}
 .input_origin:checked ~ .input_custom {
     background-image: url(../img/common/ico_check.svg);
     background-repeat: no-repeat;
@@ -472,6 +478,7 @@
     box-sizing: border-box;
 }
 .popup_myinfo_check {
+    position: relative;
     display: inline-block;
     vertical-align: top;
     margin-top: 30px;
