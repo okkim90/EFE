@@ -28,7 +28,7 @@
                         breakpoint: 1439,
                         settings: {
                             slidesToShow: 3,
-                            slidesToScroll: 3,                           
+                            slidesToScroll: 3,
                         }
                     },
                     {
@@ -78,7 +78,7 @@
                     <div class="welcome">
                         <a href="">
                             <img src="../img/common/icon_user_m.png" alt="" class="my_icon">
-                            <span class="my_name">홍길동</span>    
+                            <span class="my_name">홍길동</span>
                         </a>
                         님 반갑습니다.
                     </div>
@@ -108,7 +108,7 @@
                                         <li><a href="">대한상공회의소</a></li>
                                         <li><a href="">중소기업중앙회</a></li>
                                         <li><a href="">한국경영자총협회</a></li>
-                                        <li><a href="">한국무역협회</a></li>                              
+                                        <li><a href="">한국무역협회</a></li>
                                     </ul>
                                 </li>
                                 <li class="order2">
@@ -147,7 +147,7 @@
                                         <li><a href="">한겨레 시민경제센터</a></li>
                                         <li><a href="">한국경제신문 경제교육연구소</a></li>
                                         <li><a href="">한국교육방송</a></li>
-                                        <li><a href="">포스코 인재창조원</a></li>                                       
+                                        <li><a href="">포스코 인재창조원</a></li>
                                     </ul>
                                 </li>
                                 <li class="order5">
@@ -177,7 +177,7 @@
                         <li><a href="">관리자</a></li>
                     </ul>
                     <div class="allMenuInner">
-                        
+
                         <ul class="allMenu">
                             <li class="has_depth2">
                                 <a href="../html/pr_center.html">경제·금융교육존</a>
@@ -193,7 +193,7 @@
                                             <li><a href="">대한상공회의소</a></li>
                                             <li><a href="">중소기업중앙회</a></li>
                                             <li><a href="">한국경영자총협회</a></li>
-                                            <li><a href="">한국무역협회</a></li>                              
+                                            <li><a href="">한국무역협회</a></li>
                                         </ul>
                                     </li>
                                     <li class="has_depth3">
@@ -235,7 +235,7 @@
                                             <li><a href="">한겨레 시민경제센터</a></li>
                                             <li><a href="">한국경제신문 경제교육연구소</a></li>
                                             <li><a href="">한국교육방송</a></li>
-                                            <li><a href="">포스코 인재창조원</a></li>                                       
+                                            <li><a href="">포스코 인재창조원</a></li>
                                         </ul>
                                     </li>
                                     <li class="has_depth3">
@@ -265,10 +265,10 @@
                 </div>
             </div>
         </div>
-		<!-- //header -->      
+		<!-- //header -->
 
         <!-- container -->
-        <div id="container">           
+        <div id="container">
             <div class="mypage">
                 <div class="mypic"><img src="../img/mypage/profile.svg" alt="" /></div>
                 <strong class="myname">홍길동</strong>
@@ -282,7 +282,16 @@
                     <dt>내 하트</dt>
                     <dd><img src="../img/mypage/heart.svg" alt="" /> 35개</dd>
                 </dl>
-            </div>            
+            </div>
+            <div class="mypage_exp">
+                <article class="exp_wrap type_mypage">
+                    <div class="exp_box">
+                        <span class="exp_bar" data-max="7600" data-current="3700">
+                            <span class="exp_count"></span>
+                        </span>
+                    </div>
+                </article>
+            </div>
             <div class="attendance">
                 <h2>나의 출석일수 <strong class="fc_red">2</strong>일</h2>
                 <ul class="list">
@@ -291,7 +300,7 @@
                     <li></li>
                 </ul>
                 <p>경제·금융교육 행사 중 연속 3일 출석체크 완료하시면<br class="only_m" /> 추첨을 통해 선물을 드립니다.</p>
-            </div> 
+            </div>
             <div class="my_history">
                 <div class="inner">
                     <h2>추천 기관</h2>
@@ -358,7 +367,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>    
+            </div>
             <div class="my_slide">
                 <div class="inner">
                     <h2>내가 시청한 교육 영상</h2>
@@ -369,7 +378,7 @@
                                 <div class="pic" style="background-image: url(../img/mypage/movie_thum.png);"><img src="../img/mypage/movie_thum.png" alt=""></div>
                                 <dl>
                                     <dt>한국개발연구원</dt>
-                                    <dd> 
+                                    <dd>
                                         [자유 토론] 한국 기업부문의 이중구조, 현재와 미래와 미 [자유 토론] 한국 기업부문의 이중구조, 현재와 미래와 미
                                     </dd>
                                 </dl>
@@ -465,7 +474,7 @@
                         </div>           -->
                     </div>
                 </div>
-            </div>        
+            </div>
         </div>
 		<!-- //container -->
 
@@ -474,5 +483,82 @@
             <h2><a href="../html/index.html"><img src="../img/common/logo2.svg" alt="금융교육존" /></a></h2>
         </div>
 		<!-- //footer -->
+
+        <!-- 개인정보 입력 팝업 -->
+        <div class="popup_wrap popup_myinfo">
+            <div class="popup">
+                <div class="popup_cont">
+                    <strong class="popup_myinfo_tit">앗! 입력되지 않는 정보가 있네요.</strong>
+                    <dl class="popup_input_area">
+                        <dt>이름 <strong class="fc_red">*</strong></dt>
+                        <dd>
+                            <input type="text" class="input">
+                        </dd>
+                    </dl>
+                    <dl class="popup_input_area">
+                        <dt>휴대전화번호 <strong class="fc_red">*</strong></dt>
+                        <dd>
+                            <input type="tel" class="input taC" maxlength="3">
+                            <span class="dash">-</span>
+                            <input type="tel" class="input taC" maxlength="4">
+                            <span class="dash">-</span>
+                            <input type="tel" class="input taC" maxlength="4">
+                        </dd>
+                    </dl>
+                    <dl class="popup_input_area">
+                        <dt>생년월일 <strong class="fc_red">*</strong></dt>
+                        <dd>
+                            <input type="tel" class="input" placeholder="예)19900310">
+                        </dd>
+                    </dl>
+                    <label class="popup_myinfo_check">
+                        <input type="checkbox"  class="input_checkbox input_origin"><span class="input_custom"></span><a href="../html/privacy.html" target="_blank" class="underline">개인정보수집</a>에 동의합니다.
+                    </label>
+                    <div class="popup_btn_area taC">
+                        <input type="submit" value="입력하기" class="popup_btn">
+                    </div>
+                </div>
+                <div class="popup_bot_btns clearfix">
+                    <a href="" class="fr" onclick="close_pop(this); return false">닫기</a>
+                </div>
+            </div>
+        </div>
     </div>
+    <script>
+        $(function(){
+            $(window).on('load',function(){
+                setTimeout(function(){
+                    exp();
+                },400);
+
+            });
+        });
+        function exp(){
+            $('.exp_bar').each(function(){
+                $(this).animate({
+                    width: ($(this).data('current')*100)/$(this).data('max') + '%'
+                }, 1200);
+                $(this).find('.exp_count').animate(
+                    {
+                        Counter: $(this).data('current')
+                    },
+                    {
+                        duration: 1200,
+                        easing: 'swing',
+                        step: function(now) {
+                            $(this).html(commaSeparateNumber(Math.ceil(now)) + ' EXP');
+                        }
+                    }
+                );
+            });
+
+        }
+        function commaSeparateNumber(val){
+            while (/(\d+)(\d{3})/.test(val.toString())){
+            val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+            }
+            return val;
+        }
+    </script>
+</body>
 </html>
