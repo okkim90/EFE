@@ -68,9 +68,9 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 .event4 {background-color: #ecf0f3;}
 .event4 .inner {padding: 66px 45px 60px; text-align: center;}
 .event4 .title2 {color: #1E78F0;}
-.event4 .cont_wrap {position: relative; padding-left: 560px; padding-top: 30px;}
+.event4 .cont_wrap {position: relative; padding-left: 515px; padding-top: 30px;}
 .event4 .app_pic {position: absolute; bottom: -60px; left: -115px;}
-.event4 .app_pic img {max-height: 432px;}
+.event4 .app_pic img {max-height: 540px;}
 .white_box {margin-bottom: 40px; padding: 28px 20px 30px; min-height: 205px; border-radius: 22px; background-color: #fff; box-sizing: border-box;}
 .white_box .row {position: relative; margin-top: 20px; padding-left: 78px; text-align: left;}
 .white_box .row:first-child {margin-top: 0;}
@@ -503,6 +503,8 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 .quiz1 .wrap_tit {text-align: center;}
 .quiz1 .wrap_tit h2 {display: block; font-size: 36px; line-height: 1.22;}
 .quiz1 .wrap_tit p {padding-top: 24px; font-size: 18px; line-height: 1.22; color: #696969;}
+.quiz1 {}
+
 
 .quiz2 {margin-top: 149px;}
 .quiz2 .inner {max-width: 1096px; margin: 0 auto;}
