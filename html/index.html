@@ -334,6 +334,7 @@
                                             </ul>
                                         </div>
                                     </div>
+                                    <a href="" class="meta_btn">경제·금융교육 <br> 메타버스관</a>
                                 </div>
                             </div>
 
@@ -460,13 +461,19 @@
 			});
 
             const swiper = new Swiper('.main_slide', {
-                //allowTouchMove: false,
+                allowTouchMove: true,
                 autoHeight: true,
                 effect: "fade",
-
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
                 breakpoints: {
+                    1025 : {
+                        allowTouchMove: true,
+                    },
                     809 : {
-                        //autoHeight: true,
+                        allowTouchMove: false,
                     }
                 }
             });
