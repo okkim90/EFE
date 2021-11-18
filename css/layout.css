@@ -994,6 +994,9 @@
         left: 24px;
         bottom: 52px;
     }
+    .exp_wrap.type_mypage {
+        left: 0;
+    }
     .exp_wrap strong {
         font-size: 10px;
         line-height: 12px;
