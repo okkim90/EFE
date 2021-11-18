@@ -11,17 +11,21 @@
 .list_q li {width: 20%; height: 100%; padding: 1.91%; box-sizing: border-box; cursor: pointer;}
 .list_q.type_vtc li {height: 20%; width: 100%; padding: 9.55%;}
 .list_q li .item_q {display: block; position: relative; padding-bottom: 100%;border-radius: 16px; background-color: #fff; box-sizing: border-box;}
-.list_q.case_corrt li .item_q {background-color: #1e78f0; z-index: 1;}
+/* .list_q.case_corrt li .item_q {background-color: #1e78f0; z-index: 1;} */
 .list_q.type_vtc li .item_q {padding-bottom: 0; height: 100%; padding-left: 100%;}
-.list_q.case_write li .item_q::before {position: absolute;content: ''; left: 0; top: 0; width: 100%;height: 100%; border-radius: 16px; border: solid 3px #1e78f0; box-sizing: border-box;z-index: 5;}
+/* .list_q.case_write li .item_q::before {position: absolute;content: ''; left: 0; top: 0; width: 100%;height: 100%; border-radius: 16px; border: solid 3px #1e78f0; box-sizing: border-box;z-index: 5;} */
 .list_q li .item_q .txt_num {position: absolute; top: 15px; left: 13px; z-index: 5; font-size: 12px; line-height: 1.17; font-weight: bold; color: #c7c7c7;}
-.list_q li .item_q .box_a {position: absolute; left: 50%; top: 50%; margin-top: 1px; transform: translate(-50%, -50%); z-index: 5; font-size: 2vw; line-height: 1.38; color: #1e78f0; font-weight: bold;}
-.list_q.case_corrt li .item_q .box_a {color: #fff;}
+.list_q.case_write li .item_q .txt_num{color: #1e78f0;}
+.list_q li .item_q .inp_word {position: absolute;  left: 50%; top: 50%; margin-top: 1px; width:100%; height: 100%; border-radius: 16px; background:transparent; transform: translate(-50%, -50%); z-index: 5; font-size: 2vw; line-height: 1.38; color: #1e78f0; font-weight: bold;text-align: center; border: 0 none; box-sizing: border-box; }
+.list_q.case_write li .item_q .inp_word,
+.list_q.case_corrt li .item_q .inp_word{outline:solid 3px#1e78f0; }
+.list_q.case_corrt li .item_q .txt_num {color: #1e78f0;}
 
 .quiz1 .wrap_quiz .box_quiz {width: 672px;padding-left: 27px;}
 .wrap_quiz .box_quiz .area_q + .area_q {margin-top: 61px;}
 .wrap_quiz .box_quiz .tit_q {display: block; font-size:22px; color: #3774df;}
 .wrap_quiz .box_quiz .txt_q {margin-top: 14px; font-size:18px; line-height: 1.44; color: #666;}
+.wrap_quiz .box_quiz .before_g .tit_q {text-align: center;}
 .wrap_quiz .box_quiz .tgg_box {margin-top: 24px;}
 .wrap_quiz .box_quiz .tgg_box .btn_tgg {width: 93px;line-height: 26px;text-align: center;font-size: 12px; color: #fff; font-weight: bold; border-radius: 100px;background-color: #ffce46;}
 .box_quiz .tgg_box .btn_tgg .ico_arr {display: inline-block; margin-left: 7.5px; width: 14px;height:8.5px;background: url(../img/quiz/ico_tggArr.svg) no-repeat 50%; transition: transform .3s ease-in-out;}
@@ -39,9 +43,8 @@ font-size: 18px; color: #3774df; font-weight: bold;}
 .quiz1 .wrap_quiz.type_finish {align-items: flex-start;}
 .quiz1 .wrap_quiz.type_finish .wrap_tit {text-align: left;}
 .quiz1 .wrap_quiz.type_finish .box_game {width: 424px;min-width:424px;padding: 37px;}
-.wrap_quiz.type_finish  .list_q li .item_q .box_a {font-size: 1.3vw;}
-.wrap_quiz.type_finish .list_q li .item_q, 
-.wrap_quiz.type_finish .list_q.case_write li .item_q::before {font-size: 12px;}
+.wrap_quiz.type_finish  .list_q li .item_q .inp_word {font-size: 1.3vw;border-radius: 12px;}
+.wrap_quiz.type_finish .list_q li .item_q{font-size: 12px;border-radius: 12px;}
 
 .quiz1 .wrap_quiz.type_finish .box_quiz_finish {padding-left: 60px;box-sizing: border-box;} 
 .wrap_quiz.type_finish .wrap_tit.type_tablet{display: none;}
@@ -51,7 +54,7 @@ font-size: 18px; color: #3774df; font-weight: bold;}
 .wrap_quiz .wrap_answer .item_answer {padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid rgba(153,153,153,.3);}
 .wrap_quiz .wrap_answer .item_answer:last-of-type {border-bottom: 0 none;padding-bottom: 0;margin-bottom: 0;}
 .wrap_quiz .wrap_answer dl {position: relative; padding-left: 84px; font-size: 18px; line-height: 1.56;color: #666;}
-.wrap_quiz .wrap_answer dl + dl {padding-top: 16px;}
+.wrap_quiz .wrap_answer dl + dl {margin-top: 16px;}
 .wrap_quiz .wrap_answer dt {position: absolute; left:0; top: 0; color:#3774df; font-weight: bold;}
 
 
@@ -63,7 +66,8 @@ font-size: 18px; color: #3774df; font-weight: bold;}
   .quiz1 .wrap_quiz .box_game {padding-left: 35px;}
   .list_q li .item_q .txt_num {font-size: 11px;}
   .quiz1 .wrap_quiz .box_game {padding: 42px;}
-  .list_q li .item_q .box_a {font-size: 1.8vw;}
+  .list_q li .item_q .inp_word,
+  .wrap_quiz.type_finish .list_q li .item_q .inp_word {font-size: 1.8vw;} 
 }
 
 /* ###### 태블릿 ###### */
@@ -105,12 +109,12 @@ font-size: 18px; color: #3774df; font-weight: bold;}
   .quiz1 .wrap_quiz .box_game {padding: 8.26%;}
 
   .list_q li .item_q .txt_num {top: 5px; left: 6px; font-size: 8px;}
-  .list_q li .item_q .box_a {font-size: 3.9vw;}
+  .list_q li .item_q .inp_word {font-size: 3.9vw;border-radius: 8px;}
 
   .quiz1.type_finish .wrap_quiz {grid-template-columns: 40px;}
   .wrap_quiz.type_finish .wrap_tit .txt_info {padding-top: 20px;}
   .wrap_quiz.type_finish .wrap_tit.type_tablet {margin-bottom: 30px;}
-  .wrap_quiz.type_finish .list_q li .item_q .box_a {font-size: 4vw;}
+  .wrap_quiz.type_finish .list_q li .item_q .inp_word {font-size: 4vw;}
   .wrap_quiz.type_finish .wrap_answer {padding-top: 40px;}
   .wrap_answer .tit_answer {font-size: 14px;margin-bottom: 10px;}
   .wrap_quiz .wrap_answer dt,
