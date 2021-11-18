@@ -887,6 +887,8 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 .quiz1 .wrap_tit p {font-size: 12px;padding-top: 10px;}
 
 .quiz2 {margin-top: 12px;}
+.quiz2 .inner{position: relative; margin-top: 60px;}
+.quiz2 .inner::before{position: absolute;content: '';top: 0;left: 60px;right: 60px;height: 1px;background-color: #d2d2d2;}
 .quiz2 .area_agree .txt_tit {margin-bottom: 16px; font-size:18px;}
 .quiz2 .area_agree .label {margin-top: 24px;}
 .quiz2 .area_agree + .area_agree{margin-top: 40px;}
@@ -1151,9 +1153,13 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 .notice_top {padding-top: 32.5px;}
 .notice_top h2 {font-size: 18px;line-height: 26px;}
 .notice_sec.sec_list{padding-top: 32px;padding-bottom: 10px;}
-.tbl_notice th {display: none;}
-.tbl_notice td {display: none;height: auto;}
-.tbl_notice td.col_tit{display: block;width: 100%;}
+.tbl_notice .col_tit{display: table-cell;width: 80%;}
+.tbl_notice .col_date{display: table-cell; width: 20%; font-size: 12px;color: #999}
+.tbl_notice th {display: none;font-size: 0;}
+.tbl_notice th.col_tit,
+.tbl_notice th.col_date {font-size: 0;padding: 0;line-height: 0;}
+.tbl_notice td.col_num,
+.tbl_notice td.col_file {display: none;height: auto;}
 .tbl_notice td .link_tit{padding: 18px 13% 18px 0;}
 .tbl_notice td .link_tit .txt_tit {word-break: keep-all;}
 
@@ -1187,6 +1193,8 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 .quiz1 .wrap_tit h2 {font-size: 24px;}
 .quiz1 .wrap_tit p {font-size: 10px;padding-top: 12px;}
 
+.quiz2 .inner {padding-top: 60px;margin-top: 30px;}
+.quiz2 .inner::before {left: 24px;right: 24px;}
 .quiz2 .area_agree .txt_tit {font-size: 16px;margin-bottom: 10px;}
 .quiz2 {margin-top: 0;}
 .quiz2 .area_agree .label {margin-top: 16px;line-height: 18px;}
