@@ -1016,6 +1016,7 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 .popup_event .gift .gray_box .pic {height: auto !important;}
 .popup_event .gift .gray_box strong {display: none;}
 .popup_event .gift .gray_box .txt::before {display: inline-block; position: relative; left: 0px; content: '타임어택'; width: 54px; color: #666; line-height: 16px; font-size: 10px; font-weight: bold;}
+.popup_event .gift li:nth-child(5) .gray_box .txt::before {content: '낱말퀴즈';}
 .pop_list li {padding-left: 8px; line-height: 12px; font-size: 8px;}
 .pop_list li + li {margin-top: 2px;}
 .popup_wrap .popup_bot_btns { padding: 10px 18px;}
