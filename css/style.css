@@ -482,13 +482,13 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 
 /* 가로세로 낱말 퀴즈 */
 .quiz_cont {padding-bottom: 100px;}
-.quiz_top {position: relative;margin-top: 60px; background-color: #3d1c60;}
+.quiz_top {position: relative; background-color: #3d1c60;}
 .quiz_top::before{position: absolute; left:0; top: 0; height: 100%; width: 50%; background: url(../img/quiz/bg_hangul1.svg) no-repeat 50%; content: '';}
 .quiz_top::after{position: absolute; right:0; top: 0; height: 100%; width: 50%; background: url(../img/quiz/bg_hangul2.svg) no-repeat 50%; content: '';}
 .quiz_top {margin-top: 48px; text-align: center;}
-.quiz_top .inner {position: relative; margin: 0 auto; padding-top: 92px; max-width: 1320px; height: 278px; text-align: center; box-sizing: border-box;}
-.quiz_top h2 { position: relative; margin-bottom: 20px; line-height: 38px; font-size: 36px; color: #fff; z-index: 2;}
-.quiz_top p {position: relative; color: #fff; line-height: 17px; font-size: 12px;z-index: 2;}
+.quiz_top .inner {padding:160px 24px 0; height: 338px; width: auto; box-sizing: border-box;}
+.quiz_top h2 {margin-bottom: 19px; line-height: 28px; font-size: 24px; color: #fff;}
+.quiz_top p {line-height: 14px; font-size: 10px; color: #fff;}
 
 .quiz0 {margin-top: 60px;}
 .quiz0 .giftQuiz {position: relative; max-width: 1096px; padding:44px 430px 41px 65px; margin: 0 auto; background-color: #f7f7f7; box-sizing: border-box;}
@@ -622,8 +622,6 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 /* 개인정보처리방침 */
 .parvacy {padding: 60px; width: auto;}
 
-/* 가로 세로 낱말 퀴즈 */
-.quiz_top .inner {padding: 92px 60px 0;}
 
 }
 
@@ -692,7 +690,7 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 .popup_event .popup_cont .fl {float: none; width: auto;}
 .popup_event .popup_cont .fr {float: none; width: auto;}
 .popup_event .gift .pic {margin-bottom: 6px;}
-/* .popup_event .gift li:nth-child(1) img {height: ;} */
+.popup_event .gift li:nth-child(1) img {height: ;}
 .popup_event .gift li:nth-child(2) img {height: 63px;}
 .popup_event .gift li:nth-child(3) img {height: 46px;}
 
@@ -871,9 +869,10 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 
 /* 이벤트 - 가로세로 퀴즈 */
 .quiz_cont {padding-bottom: 0;}
+.quiz_top .inner {height: 240px; padding: 95px 24px 0;}
 .quiz_top::before, .quiz_top::after {display: none;}
-.quiz_top h2 {font-size: 32px;line-height: 48px;}
-.quiz_top p {font-size: 12px; line-height: 22px;}
+.quiz_top h2 {font-size: 32px;line-height: 39px;margin-bottom: 11px;}
+.quiz_top p {font-size: 12px;}
 .quiz0 .inner .txt_gift {font-size: 16px;}
 .quiz0 .txt_gift .emph_txt {font-size: 24px;}
 .quiz0 .giftQuiz {padding: 40px 280px 40px 30px}
@@ -1176,10 +1175,9 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 
 /* 이벤트 - 가로세로 */
 .quiz_cont {padding-bottom: 30px;}
-.quiz_top {margin-top: 48px;}
-.quiz_top .inner {padding:30px 24px 0; height: 173px;}
-.quiz_top h2 {font-size: 24px;line-height: 28px;margin-bottom: 19px;}
-.quiz_top p {font-size: 10px; line-height: 14px;}
+.quiz_top .inner {height: 173px;padding-top: 29px;}
+.quiz_top h2 {font-size: 24px;line-height: 28px;margin-bottom: 20px;}
+.quiz_top p P{font-size: 10px;}
 
 .quiz0 {margin-top: 10px;}
 .quiz0 .giftQuiz {padding: 24px;}
