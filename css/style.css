@@ -117,7 +117,7 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 .popup_event .gift {margin-top: -18px; line-height: 0; font-size: 0;}
 .popup_event .gift li {display: inline-block; margin-top: 30px; width: 33.33%; line-height: 18px; font-size: 12px; text-align: center; vertical-align: top;}
 .popup_event .gift .pic {display: flex;justify-content: center;align-items: center; position: relative; margin-bottom: 9px; height: 100px;}
-.popup_event .gift .pic img {}
+/* .popup_event .gift .pic img {} */
 .popup_event .gift .pic .rank {position: absolute; top: -20px; right: 0px; width: 45px; height: 56px; color: #fff; line-height: 56px; font-size: 14px; font-weight: bold; text-align: center;}
 .popup_event .gift .pic .rank.red {background: url('../img/event/rank_red.svg') no-repeat 50% 50%;}
 .popup_event .gift .pic .rank.blue {background: url('../img/event/rank_blue.svg') no-repeat 50% 50%;}
