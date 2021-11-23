@@ -29,11 +29,13 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 .sec.event0 {background: #FECE46; margin-top: 60px;}
 .event0 .inner {padding: 60px 0; text-align: center;}
 .event0 .title_detail {margin-bottom: 30px; color: #3774DF; font-weight: bold;}
-.event0 .btn_round {text-align: left;}
 .event0 .img_g {position: absolute;right:63px;top: 59px;}
 .btn_round {display: inline-block; position: relative; padding: 0 34px; min-width: 166px; height: 48px; border-radius: 25px; box-sizing: border-box; line-height: 48px; font-size: 18px; font-weight: bold; text-align: center; background-color: #fff;}
-.btn_round.purple {min-width: 260px; color: #3D1C60; background: #fff url('../img/event/arrow_purple.svg') no-repeat 100% 50%; background-origin: content-box;}
-.btn_round.red {min-width: 260px; color: #EC4041; background: #fff url('../img/event/arrow_red.svg') no-repeat 100% 50%; background-origin: content-box;}
+.btn_round span {display: inline-block;vertical-align: top;padding-right: 20px;background-origin: content-box;}
+.btn_round.purple {min-width: 260px; color: #3D1C60; }
+.btn_round.purple span {background: #fff url('../img/event/arrow_purple.svg') no-repeat 100% 51%;}
+.btn_round.red {min-width: 260px; color: #EC4041; }
+.btn_round.red span {background: #fff url('../img/event/arrow_red.svg') no-repeat 100% 51%;}
 .btn_round.gray {color: #fff; background-color: #D2D2D2;}
 .btn_round.blue {min-width: 166px; color: #fff; background-color: #1E78F0; text-align: center;}
 .btn_round.blue:disabled {background-color: #C7C7C7;}
@@ -43,7 +45,6 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 .event1 .inner {padding: 60px 0; text-align: center;}
 .event1 .title_detail {margin-bottom: 30px;}
 .event1 .title_detail strong {font-weight: 400;}
-.event1 .btn_round {padding-left: 68px; text-align: left;}
 
 .event2 {background-color: #D2F4FF;}
 .event2 .inner {padding: 60px 0 0; text-align: center;}
@@ -96,7 +97,6 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 .event6::after{position: absolute;right: 0;top: 0;width: 50%;height: 100%;background: url(../img/event/bg_hangul2.svg) no-repeat 83% 50%;content: '';}
 .event6 .inner {padding: 60px 0; text-align: center;}
 .event6 .title_detail {margin-bottom: 30px;}
-.event6 .btn_round {padding-left: 68px; text-align: left;}
 
 .event_banner {position: absolute; width: 123px; height: 150px; }
 
@@ -646,9 +646,11 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 @media screen and (max-width: 1024px){
 .sec .inner {padding: 60px; width: auto;}
 .btn_round {height: 38px; line-height: 38px; font-size: 14px; background-size: 5px auto;}
-.btn_round.purple {padding: 0 22px 0 47px; min-width: 218px;}
-.btn_round.red {padding: 0 22px 0 67px; min-width: 218px;}
-
+.btn_round span {padding-right: 15px;}
+.btn_round.purple { min-width: 218px;}
+.btn_round.purple span {background-size: 6px auto; background-position: 100% 50%;}
+.btn_round.red { min-width: 218px;}
+.btn_round.red span {background-size: 6px auto; background-position: 100% 50%;}
 
 /* 이벤트 */
 .title {margin-bottom: 20px; line-height: 33px; font-size: 28px;}
@@ -922,8 +924,12 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 .event0 .inner {padding: 30px 24px;}
 .event0 .title_detail {margin: 12px 0;}
 .btn_round {min-width: 119px; height: 36px; line-height: 36px; font-size: 12px;}
-.btn_round.purple {padding: 0 18px 0 24px; min-width: 161px; background-size: 4px auto;}
-.btn_round.red {padding-left: 41px; min-width: 161px; background-size: 4px auto;}
+.btn_round span {padding-right: 12px;}
+.btn_round.purple {padding: 0 18px; min-width: 161px;}
+.btn_round.purple span {background-size: 4px auto;background-position: 100% 50%;}
+.btn_round.red {padding:0 18px; min-width: 161px;}
+.btn_round.red span {background-size: 4px auto;background-position: 100% 50%;}
+
 .btn_round.blue {min-width: 119px;}
 .event1 {background-image: url('../img/event/bg_event_m.svg'); background-size: auto 90%;}
 .event2 .inner {padding: 30px 24px 0;}
