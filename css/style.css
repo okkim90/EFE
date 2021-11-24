@@ -346,7 +346,7 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 .mypage .mypic {margin-bottom: 27px;}
 .mypage .myname {display: block; margin-bottom: 12px; color: #000; line-height: 1.22; font-size: 36px;}
 .mypage .myetc {margin-bottom: 30px; color: #999; line-height: 15px; font-size: 12px; font-weight: bold;}
-.mypage .btn_round {margin-bottom: 56px; padding: 0 10px; min-width: 93px; height: 26px; border: 1px solid #C7C7C7; color: #999; line-height: 24px; font-size: 12px; font-weight: bold; }
+.mypage .btn_round {margin-bottom: 0; padding: 0 10px; min-width: 93px; height: 26px; border: 1px solid #C7C7C7; color: #999; line-height: 24px; font-size: 12px; font-weight: bold; }
 .mypage .my_heart {font-size: 16px;line-height: 18px;color: #ff0000;font-weight: bold;margin-bottom: 22px;}
 .mypage .my_heart img {height: 18px;}
 .mypage .phone { position: relative; overflow: hidden;  margin: 0 auto 12px; padding-right: 30px; width: 229px; height: 26px; box-sizing: border-box; }
@@ -821,7 +821,7 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 .mypage.mypic {margin-bottom: 24px;}
 .mypage .myname {line-height: 30px; font-size: 28px;}
 .mypage .myetc {margin-bottom: 20px;}
-.mypage .btn_round {margin-bottom: 36px;}
+.mypage .btn_round {margin-bottom: 0;}
 .heart_count dt {margin-bottom: 10px;line-height: 18px; font-size: 16px;}
 .heart_count dd {line-height: 50px; font-size: 48px;}
 .heart_count dd img {margin-top: 10px; width: 42px;}
@@ -1116,7 +1116,7 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 .mypage .myetc strong {display: block;}
 .mypage .myetc span {display: none;}
 .mypage .my_heart {margin-bottom: 12px;}
-.mypage .btn_round {padding: 0 5px; margin-bottom: 25px; min-width: 66px; height: 22px; line-height: 20px; font-size: 10px;}
+.mypage .btn_round {padding: 0 5px; margin-bottom: 0; min-width: 66px; height: 22px; line-height: 20px; font-size: 10px;}
 .heart_count dt {line-height: 16px; font-size: 14px;}
 .heart_count dd {line-height: 38px; font-size: 36px;}
 .heart_count dd img {margin-top: 5px; width: 32px;}
