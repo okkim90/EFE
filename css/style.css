@@ -358,12 +358,10 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 .heart_count dt {margin-bottom: 15px; color: #1E78F0; line-height: 24px; font-size: 22px; font-weight: bold;}
 .heart_count dd {color: #FC0F00; line-height: 74px; font-size: 72px; font-weight: bold;}
 .heart_count dd img {margin-top: 5px;}
-.attendance {padding: 60px; background: #F7F7F7; text-align: center;}
-.attendance h2 {margin-bottom: 20px; color: #1E78F0; line-height: 24px; font-size: 22px;}
-.attendance .list {margin-bottom: 28px; line-height: 0; font-size: 0; text-align: center;margin-top: -24px;}
-.attendance .list li {display: inline-block; position: relative;margin: 0 12px; margin-top: 24px; width: 93px; height: 93px; box-sizing: border-box; border-radius: 50%; background: #fff url('../img/mypage/heart_off.svg') no-repeat 50% 50%; vertical-align: top;}
-.attendance .list li:first-child {}
-.attendance p {color: #999; line-height: 22px; font-size: 14px;}
+
+
+
+
 .my_history .inner {margin: 0 auto; padding: 60px 0; width: 1320px;}
 .my_history h2 {margin: 60px 0 20px; color: #1E78F0; line-height: 24px; font-size: 22px;}
 .my_history h2:first-child {margin-top: 0;}
@@ -383,6 +381,19 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 .mymovie_slide .slick-prev {left: -12px; background: url('../img/mypage/btn_slide_prev.svg') no-repeat 0 0;}
 .mymovie_slide .slick-next {right: -12px; background: url('../img/mypage/btn_slide_next.svg') no-repeat 0 0;}
 .mymovie_slide .slick-arrow.slick-disabled {display: none !important;}
+
+
+.mypage_sec_tit {margin-bottom: 30px;}
+.mypage_sec_tit h2 {font-size: 22px;line-height: 26px;font-weight: bold;color: #3774df;}
+.mypage_sec_tit p {font-size: 14px;line-height: 22px;margin-top: 10px;color: #999;}
+.mypage_exp {margin-bottom: 60px;}
+.mypage_inner {max-width: 1342px;padding: 0 60px;margin: 0 auto;}
+
+.heart_list {margin: 0 -21px;font-size: 0;}
+.heart_list li {display: inline-block;vertical-align: top;width: 10%;box-sizing: border-box;padding: 0 21px;}
+.heart_list li .heart_list_cont {padding-top: 100%;position: relative;}
+.heart_list li .ico_heart {position: absolute;width: 100%;height: 100%;background-color: #f7f7f7;border-radius: 50%;left: 0;top: 0;background-image: url(../img/mypage/ico_heart_off.svg);background-repeat: no-repeat;background-position: center center;background-size: 46%;}
+.heart_list li.on .ico_heart {background-image: url(../img/mypage/ico_heart_on.svg);}
 
 
 /* 로그인 */
@@ -617,7 +628,8 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 .my_history .inner {padding: 60px; width: auto;}
 .my_slide .inner {padding: 0 48px 100px; width: auto;}
 .mymovie_slide .slick-arrow {margin-top: -24px; top: calc(50% - 25px);}
-
+.heart_list {margin: 0 -16px;}
+.heart_list li {padding: 0 16px;}
 
 /* 개인정보처리방침 */
 .parvacy {padding: 60px; width: auto;}
@@ -628,16 +640,6 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 }
 
 
-@media screen and (max-width: 1360px){
-    .attendance .list {
-        width: 600px;
-        margin: 0 auto;
-        margin-top: -24px;
-    }
-    .attendance p {
-        margin-top: 24px;
-    }
-}
 
 
 
@@ -823,10 +825,7 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 .heart_count dt {margin-bottom: 10px;line-height: 18px; font-size: 16px;}
 .heart_count dd {line-height: 50px; font-size: 48px;}
 .heart_count dd img {margin-top: 10px; width: 42px;}
-.attendance {padding: 30px 60px;}
-.attendance h2 {line-height: 22px; font-size: 16px;}
-.attendance .list {width: 600px;margin: 0 auto; margin-top: -24px;}
-.attendance p {font-size: 12px;margin-top: 23px;}
+
 .my_history .inner {padding: 40px 60px;}
 .my_history h2 {margin: 40px 0 10px; line-height: 22px; font-size: 16px;}
 .history_list {margin-top: -10px;}
@@ -835,6 +834,14 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 .my_slide h2 {margin: 0 0 10px 12px; line-height: 22px; font-size: 16px;}
 .mymovie_slide dt {margin-bottom: 5px; line-height: 12px; font-size: 10px; font-weight: bold;}
 .mymovie_slide dd {overflow: hidden; max-height: 36px; color: #000; line-height: 18px; font-size: 12px;}
+
+.mypage_exp {margin-bottom: 40px;}
+.mypage_sec_tit {margin-bottom: 20px;}
+.mypage_sec_tit h2 {font-size: 16px;line-height: 22px;}
+.mypage_sec_tit p {font-size: 12px;line-height: 15px;margin-top: 6px;}
+.heart_list {margin: 0 -3vw;margin-top: -2vw;}
+.heart_list li {width: 20%;padding: 0 3vw;margin-top: 2vw;}
+
 
 
 /* 개인정보처리방침 */
@@ -1113,11 +1120,7 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 .heart_count dt {line-height: 16px; font-size: 14px;}
 .heart_count dd {line-height: 38px; font-size: 36px;}
 .heart_count dd img {margin-top: 5px; width: 32px;}
-.attendance {padding: 18px 18px;}
-.attendance h2 {margin-bottom: 10px; font-size: 14px;}
-.attendance .list {width: 300px; margin-top: -12px;}
-.attendance .list li {width: 48px; height: 48px; background-size: 48px auto;margin: 0 6px;margin-top: 12px;}
-.attendance p {line-height: 14px; font-size: 10px;margin-top: 16px;}
+
 .my_history .inner {padding: 30px 24px;}
 .my_history h2 {margin: 30px 0 10px; font-size: 14px;}
 .history_list {margin-top: -10px;}
@@ -1131,6 +1134,13 @@ div[class^='sec event'] {margin: 0;border-radius: 0;}
 .mymovie_slide .slick-prev {left: -8px;}
 .mymovie_slide .slick-next {right: -8px;}
 .mymovie_slide .slide_item {padding: 0 6px;}
+.mypage_inner {padding: 0 24px;}
+.mypage_exp {margin-bottom: 30px;}
+.mypage_sec_tit {margin-bottom: 16px;}
+.mypage_sec_tit h2 {font-size: 14px;line-height: 17px;}
+.mypage_sec_tit p {font-size: 10px;line-height: 14px;margin-top: 4px;}
+.heart_list {margin: 0 -2vw;margin-top: -2vw;}
+.heart_list li {padding: 0 2vw;margin-top: 2vw;}
 
 /* onAir */
 /* onAir */

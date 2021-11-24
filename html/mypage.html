@@ -280,29 +280,41 @@
                 <button type="button" class="btn_round">탈퇴하기</button>
             </div>
             <div class="mypage_exp">
-                <article class="exp_wrap type_mypage">
-                    <div class="exp_box">
-                        <span class="exp_bar" data-max="7600" data-current="3700">
-                            <span class="exp_count"></span>
-                        </span>
+                <div class="mypage_inner">
+                    <div class="mypage_sec_tit">
+                        <h2 class="">경제·금융교육 활동지수</h2>
+                        <p class="">활동지수가 800EXP 될 때마다 하트 1개를 추가로 드립니다.</p>
                     </div>
-                </article>
+                    <article class="exp_wrap type_mypage">
+                        <div class="exp_box">
+                            <span class="exp_bar" data-max="7600" data-current="3700">
+                                <span class="exp_count"></span>
+                            </span>
+                        </div>
+                    </article>
+                </div>
             </div>
             <div class="attendance">
-                <h2>나의 출석일수 <strong class="fc_red">7</strong>일</h2>
-                <ul class="list">
-                    <li><img src="../img/mypage/heart_on.svg" alt="" /></li>
-                    <li><img src="../img/mypage/heart_on.svg" alt="" /></li>
-                    <li><img src="../img/mypage/heart_on.svg" alt="" /></li>
-                    <li><img src="../img/mypage/heart_on.svg" alt="" /></li>
-                    <li><img src="../img/mypage/heart_on.svg" alt="" /></li>
-                    <li><img src="../img/mypage/heart_on.svg" alt="" /></li>
-                    <li><img src="../img/mypage/heart_on.svg" alt="" /></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <p>경제·금융교육 이벤트기간 동안<br class="only_m" /> 매일 출석체크와 홍보관 활동지수에 따라 경품 당첨 확률이 높아집니다.</p>
+                <div class="mypage_inner">
+                    <div class="mypage_sec_tit">
+                        <h2 class="">나의 출석일수 <strong class="fc_red">4</strong>일</h2>
+                        <p class="">경제·금융교육 행사 중 연속 출석체크 완료하시면 추첨을 통해 선물을 드립니다.</p>
+                    </div>
+                    <div class="heart_list_wrap">
+                        <ul class="heart_list">
+                            <li class="on"><div class="heart_list_cont"><span class="ico_heart"></span></div></li>
+                            <li class="on"><div class="heart_list_cont"><span class="ico_heart"></span></div></li>
+                            <li class="on"><div class="heart_list_cont"><span class="ico_heart"></span></div></li>
+                            <li class="on"><div class="heart_list_cont"><span class="ico_heart"></span></div></li>
+                            <li class=""><div class="heart_list_cont"><span class="ico_heart"></span></div></li>
+                            <li class=""><div class="heart_list_cont"><span class="ico_heart"></span></div></li>
+                            <li class=""><div class="heart_list_cont"><span class="ico_heart"></span></div></li>
+                            <li class=""><div class="heart_list_cont"><span class="ico_heart"></span></div></li>
+                            <li class=""><div class="heart_list_cont"><span class="ico_heart"></span></div></li>
+                            <li class=""><div class="heart_list_cont"><span class="ico_heart"></span></div></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="my_history">
                 <div class="inner">
@@ -488,7 +500,7 @@
 		<!-- //footer -->
 
         <!-- 개인정보 입력 팝업 -->
-        <div class="popup_wrap popup_myinfo">
+        <div class="popup_wrap popup_myinfo" style="display: none;">
             <div class="popup">
                 <div class="popup_cont">
                     <strong class="popup_myinfo_tit">앗! 입력되지 않는 정보가 있네요.</strong>
@@ -530,7 +542,6 @@
                 setTimeout(function(){
                     exp();
                 },400);
-
             });
         });
         function exp(){
