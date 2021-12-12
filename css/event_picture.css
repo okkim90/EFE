@@ -310,6 +310,7 @@
     .ep_answer {
         width: 84%;
         padding: 0 0.6vw;
+        margin-top: -1px;
     }
     .ep_answer::before {
         width: 1.2vw;
