@@ -1,0 +1,340 @@
+#container.ep_container {
+    position: relative; 
+    padding: 160px 0 18vw;
+    background-image: url(../img/event/ep_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.ep_container .ep_bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 25.33%;
+    background-image: url(../img/event/ep_bg2.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.ep_container .ep_bg img {
+    width: 100%;
+}
+.ep_container .contents {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+
+.event_picture_tit {
+    text-align: center;
+    padding: 0 24px;
+    color: #3d1c60;
+    margin-bottom: 60px;
+}
+.event_picture_tit h2 {
+    font-size: 36px;
+    line-height: 44px;
+}
+.event_picture_tit p {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 27px;
+}
+
+
+
+
+.ep_set {
+    text-align: center;
+}
+.sort {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    cursor: pointer;
+}
+.ep_img_item  {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 12px;
+    width: 25%;
+    box-sizing: border-box;
+}
+.ep_img_item .bg_box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
+    background-size: cover;
+}
+.ep_img_item .img_box {
+    padding-top: 66.98%;
+    position: relative;
+}
+.ep_img_item .ep_img_txt {
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 12px;
+    color: #3d1c60;
+}
+
+.ep_imgs_wrap {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 24px;
+    margin-top: 69px;
+}
+.ep_imgs {
+    font-size: 0;
+    margin: 0 -12px;
+}
+.ep_imgs_wrap_tit {
+    color: #3d1c60;
+    margin-bottom: 30px;
+}
+.ep_imgs_wrap_tit h3 {
+    font-size: 18px;
+    line-height: 21px;
+    position: relative;
+    font-weight: bold;
+}
+.ep_imgs_wrap_tit h3::before {
+    content: '';
+    position: absolute;
+    width: calc(50% - 80px);
+    height: 1px;
+    background-color: #dcd0e8;
+    left: 0;
+    top: 50%;
+}
+.ep_imgs_wrap_tit h3::after {
+    content: '';
+    position: absolute;
+    width: calc(50% - 80px);
+    height: 1px;
+    background-color: #dcd0e8;
+    right: 0;
+    top: 50%;
+}
+.ep_imgs_wrap_tit p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 25px;
+    font-weight: normal;
+}
+
+
+.ep_answer {
+    font-size: 0;
+    max-width: 1120px;
+    width: 80%;
+    margin: 0 auto;
+    border-left: 8px solid #000;
+    border-right: 8px solid #000;
+}
+.ep_answer_item {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    border: 8px solid #000;
+    box-sizing: border-box;
+    border-top: none;
+    border-bottom: none;
+}
+.ep_answer_item .img_box {
+    padding-top: 66.98%;
+    position: relative;
+}
+.ep_answer .inner_text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: #999;
+}
+.film_img {
+    line-height: 0;
+}
+
+
+.stbl_sec.on {
+   border-color: #f00;
+   position: relative;
+}
+.stbl_sec.on::before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #f00;
+    opacity: 0.2;
+    z-index: 100;
+}
+.stbl_placehoder {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.ep_container .btn_area {
+    margin-top: 60px;
+}
+.ep_container .btn_submit {
+    width: 174px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #3774df;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1476px){
+    .ep_answer_item {
+        border-width: 0.6vw;
+    }
+    .ep_answer {
+        position: relative;
+        padding: 0 0.6vw;
+        border-left: none;
+        border-right: none;
+    }
+    .ep_answer::before {
+        content:'';
+        position: absolute;
+        width: 1.2vw;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: #000;
+    }
+    .ep_answer::after {
+        content:'';
+        position: absolute;
+        width: 1.2vw;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: #000;
+    }
+}
+
+@media screen and (max-width: 1024px){ 
+    .ep_answer .inner_text {
+        font-size: 12px;
+        line-height: 1.1;
+    }
+}
+
+@media screen and (max-width: 767px){ 
+
+    #container.ep_container {
+        padding: 77px 0 51px;
+    }
+    .event_picture_tit {
+        margin-bottom: 24px;
+    }
+    .event_picture_tit h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .event_picture_tit p {
+        font-size: 10px;
+        line-height: 14px;
+        margin-top: 16px;
+    }
+
+    .ep_imgs_wrap_tit {
+        margin-bottom: 16px;
+    }
+    .ep_imgs_wrap_tit h3 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .ep_imgs_wrap_tit h3::before {
+        width: calc(50% - 40px);
+    }
+    .ep_imgs_wrap_tit h3::after {
+        width: calc(50% - 40px);
+    }
+    .ep_imgs_wrap_tit p {
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 10px;
+    }
+
+    .ep_imgs_wrap {
+        margin-top: 24px;
+    }
+    .ep_imgs {
+        margin: 0 -6px;
+        margin-top: -12px;
+    }
+    .ep_img_item {
+        width: 50%;
+        padding: 0 6px;
+        margin-top: 12px;
+    }
+    .ep_img_item .ep_img_txt {
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 6px;
+    }
+
+
+    .ep_answer_wrap {
+        margin: 0 -5vw;
+    }
+    .ep_answer {
+        width: 84%;
+        padding: 0 0.6vw;
+    }
+    .ep_answer::before {
+        width: 1.2vw;
+    }
+    .ep_answer::after {
+        width: 1.2vw;
+    }
+    .ep_answer_item {
+        border-width: 0.6vw;
+    }
+    .ep_answer .inner_text {
+        font-size: 10px;
+        line-height: 1.1;
+    }
+    .ep_container .btn_area {
+        margin-top: 32px;
+    }
+    .ep_container .btn_submit {
+        font-size: 14px;
+        width: 112px;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 18px;
+    }
+    .ep_container .ep_bg {
+        padding-top: 33%;
+    }
+}

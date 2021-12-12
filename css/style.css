@@ -39,8 +39,8 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 .btn_round.gray {color: #fff; background-color: #D2D2D2;}
 .btn_round.blue {min-width: 166px; color: #fff; background-color: #1E78F0; text-align: center;}
 .btn_round.blue:disabled {background-color: #C7C7C7;}
-
-
+.btn_round.green {color: #1b90b4;}
+.btn_round.green span {background: url('../img/event/arrow_green.svg') no-repeat 100% 51%;}
 .event1 {background: #EC4041 url('../img/event/bg_event1.svg') no-repeat 50% 50%;}
 .event1 .inner {padding: 60px 0; text-align: center;}
 .event1 .title_detail {margin-bottom: 30px;}
@@ -97,6 +97,12 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
 .event6::after{position: absolute;right: 0;top: 0;width: 50%;height: 100%;background: url(../img/event/bg_hangul2.svg) no-repeat 83% 50%;content: '';}
 .event6 .inner {padding: 60px 0; text-align: center;}
 .event6 .title_detail {margin-bottom: 30px;}
+
+.event7 {background: #1b90b4 url(../img/event/bg_event7.png) no-repeat; background-size: cover;background-position: center center;}
+.event7 .inner {padding: 60px 0; text-align: center;}
+.event7 .title_detail {margin-bottom: 30px;}
+
+
 
 .event_banner {position: absolute; width: 123px; height: 150px; }
 
@@ -706,7 +712,7 @@ div[class^='sec event'] {position: relative; overflow:hidden; max-width: 1320px;
   .btn_round.purple span {background-size: 6px auto; background-position: 100% 50%;}
   .btn_round.red { min-width: 218px;}
   .btn_round.red span {background-size: 6px auto; background-position: 100% 50%;}
-
+  .btn_round.green span {background-size: 6px auto; background-position: 100% 50%;}
   /* 이벤트 */
   .title {margin-bottom: 20px; line-height: 33px; font-size: 28px;}
   .title_detail {line-height: 22px; font-size: 14px;}
